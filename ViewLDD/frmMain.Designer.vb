@@ -24,7 +24,19 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
+        Me.MetroPanel1 = New MetroFramework.Controls.MetroPanel()
         Me.SuspendLayout()
+        '
+        'MetroPanel1
+        '
+        resources.ApplyResources(Me.MetroPanel1, "MetroPanel1")
+        Me.MetroPanel1.HorizontalScrollbarBarColor = True
+        Me.MetroPanel1.HorizontalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.HorizontalScrollbarSize = 10
+        Me.MetroPanel1.Name = "MetroPanel1"
+        Me.MetroPanel1.VerticalScrollbarBarColor = True
+        Me.MetroPanel1.VerticalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.VerticalScrollbarSize = 10
         '
         'frmMain
         '
@@ -34,6 +46,7 @@ Partial Class frmMain
         Me.BackImagePadding = New System.Windows.Forms.Padding(3)
         Me.BackMaxSize = 24
         Me.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle
+        Me.Controls.Add(Me.MetroPanel1)
         Me.Name = "frmMain"
         Me.ShadowType = MetroFramework.Forms.MetroFormShadowType.None
         Me.Style = MetroFramework.MetroColorStyle.Pink
@@ -41,4 +54,6 @@ Partial Class frmMain
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
 End Class
