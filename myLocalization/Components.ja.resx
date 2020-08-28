@@ -117,17 +117,100 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LDDVIEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\lddview.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnTest" xml:space="preserve">
+    <value>テスト</value>
+    <comment>For Test</comment>
   </data>
-  <data name="LDDVIEWico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LDDVIEWico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuCalc" xml:space="preserve">
+    <value>再計算</value>
+    <comment>25</comment>
   </data>
-  <data name="LDDVIEWsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LDDVIEW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuCDark" xml:space="preserve">
+    <value>濃色</value>
   </data>
-  <data name="mnuSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuSetting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuCLDDViewer" xml:space="preserve">
+    <value>LDDビューア</value>
+  </data>
+  <data name="mnuCLegacy" xml:space="preserve">
+    <value>淡色</value>
+  </data>
+  <data name="mnuClose" xml:space="preserve">
+    <value>閉じる</value>
+    <comment>158</comment>
+  </data>
+  <data name="mnuData" xml:space="preserve">
+    <value>ﾃﾞｰﾀ(&amp;D)</value>
+    <comment>177</comment>
+  </data>
+  <data name="mnuEdit" xml:space="preserve">
+    <value>編集</value>
+    <comment>159</comment>
+  </data>
+  <data name="mnuFile" xml:space="preserve">
+    <value>ﾌｧｲﾙ(&amp;F)</value>
+    <comment>154</comment>
+  </data>
+  <data name="mnuFileSave" xml:space="preserve">
+    <value>データ保存</value>
+    <comment>155</comment>
+  </data>
+  <data name="mnuGraph" xml:space="preserve">
+    <value>グラフ軸変更</value>
+    <comment>180</comment>
+  </data>
+  <data name="mnuMark" xml:space="preserve">
+    <value>マークカード</value>
+    <comment>83</comment>
+  </data>
+  <data name="mnuOpen" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="mnuReCalcVf" xml:space="preserve">
+    <value>Vf再計算</value>
+    <comment>922</comment>
+  </data>
+  <data name="mnuSearch" xml:space="preserve">
+    <value>検索</value>
+    <comment>178</comment>
+  </data>
+  <data name="mnuSmsrPoint" xml:space="preserve">
+    <value>SMSRポイント</value>
+    <comment>176</comment>
+  </data>
+  <data name="mnuSort" xml:space="preserve">
+    <value>ソート</value>
+    <comment>179</comment>
+  </data>
+  <data name="mnuView" xml:space="preserve">
+    <value>表示(&amp;V)</value>
+    <comment>173</comment>
+  </data>
+  <data name="mnuViewAbout" xml:space="preserve">
+    <value>測定について</value>
+    <comment>174</comment>
+  </data>
+  <data name="mnuViewChars" xml:space="preserve">
+    <value>測定結果</value>
+    <comment>152</comment>
+  </data>
+  <data name="mnuViewComment" xml:space="preserve">
+    <value>コメント</value>
+    <comment>175</comment>
+  </data>
+  <data name="mnuViewSetup" xml:space="preserve">
+    <value>ビュー設定</value>
+    <comment>144</comment>
+  </data>
+  <data name="mnuViewTerm" xml:space="preserve">
+    <value>測定条件</value>
+    <comment>153</comment>
+  </data>
+  <data name="mnuWrite" xml:space="preserve">
+    <value>ビュー書き出し</value>
+    <comment>149</comment>
+  </data>
+  <data name="mnuWriteNum" xml:space="preserve">
+    <value>グラフ数値書き出し</value>
+    <comment>181</comment>
   </data>
 </root>

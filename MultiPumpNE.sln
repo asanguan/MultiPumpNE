@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1231
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ViewLDD", "ViewLDD\ViewLDD.vbproj", "{21A63923-6880-4311-A614-017936B37E4A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "myLocalization", "myLocalization\myLocalization.vbproj", "{E74FD97B-12A1-47C2-807A-27267581B2F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{21A63923-6880-4311-A614-017936B37E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A63923-6880-4311-A614-017936B37E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A63923-6880-4311-A614-017936B37E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74FD97B-12A1-47C2-807A-27267581B2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74FD97B-12A1-47C2-807A-27267581B2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74FD97B-12A1-47C2-807A-27267581B2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74FD97B-12A1-47C2-807A-27267581B2F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

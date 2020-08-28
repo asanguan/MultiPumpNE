@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("ViewLDD")>
-<Assembly: AssemblyDescription("View LDD files")>
-<Assembly: AssemblyCompany("Furukawa FITEL (Thailand) Co., Ltd.")>
-<Assembly: AssemblyProduct("ViewLDD")>
-<Assembly: AssemblyCopyright("Copyright © Furukawa FITEL (Thailand) Co., Ltd. 2020")>
-<Assembly: AssemblyTrademark("FITEL")>
+<Assembly: AssemblyTitle("myLocalization")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("myLocalization")>
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("668212d3-798e-4d36-b59e-24c233661ab9")>
+<Assembly: Guid("d2c53e15-1cf4-445d-ad0d-9c91ced150db")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.1")>
-<Assembly: AssemblyFileVersion("1.0.0.1")>
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>
