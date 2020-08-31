@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 212</value>
+    <value>352, 211</value>
   </data>
   <data name="lblLanguage.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 20</value>
@@ -141,10 +141,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblLanguage.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="btnTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 238</value>
+    <value>352, 237</value>
   </data>
   <data name="btnTest.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 51</value>
@@ -165,7 +165,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnTest.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="MetroDropDownButton1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -174,11 +174,26 @@
   <data name="MetroDropDownButton1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
+  <metadata name="mcmTitleMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="mcmTitleMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 70</value>
+  </data>
+  <data name="&gt;&gt;mcmTitleMenu1.Name" xml:space="preserve">
+    <value>mcmTitleMenu1</value>
+  </data>
+  <data name="&gt;&gt;mcmTitleMenu1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroContextMenu, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
   <data name="MetroDropDownButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 0</value>
+    <value>40, 0</value>
+  </data>
+  <data name="MetroDropDownButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="MetroDropDownButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 30</value>
+    <value>70, 30</value>
   </data>
   <data name="MetroDropDownButton1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -196,23 +211,71 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MetroDropDownButton1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
-  <metadata name="MetroContextMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="MetroContextMenu1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 4</value>
+  <data name="ToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
   </data>
-  <data name="&gt;&gt;MetroContextMenu1.Name" xml:space="preserve">
-    <value>MetroContextMenu1</value>
+  <data name="ToolStripMenuItem2.Text" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;MetroContextMenu1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroContextMenu, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="ToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="ToolStripMenuItem3.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="ToolStripMenuItem4.Text" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="mseMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>182, 17</value>
   </metadata>
+  <data name="btnLeftDoor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="btnLeftDoor.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnLeftDoor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnLeftDoor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Webdings, 8.25pt</value>
+  </data>
+  <data name="btnLeftDoor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLeftDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnLeftDoor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnLeftDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 500</value>
+  </data>
+  <data name="btnLeftDoor.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnLeftDoor.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnLeftDoor.Name" xml:space="preserve">
+    <value>btnLeftDoor</value>
+  </data>
+  <data name="&gt;&gt;btnLeftDoor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLeftDoor.Parent" xml:space="preserve">
+    <value>mpnLeftDoor</value>
+  </data>
+  <data name="&gt;&gt;btnLeftDoor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="msmMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>283, 17</value>
   </metadata>
@@ -225,164 +288,441 @@
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="$this.BackImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 550</value>
   </data>
-  <data name="Panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="mpnLeftContent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="mpnLeftContent.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 30</value>
   </data>
-  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 500</value>
+  <data name="mpnLeftContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 500</value>
   </data>
-  <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
+  <data name="mpnLeftContent.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;mpnLeftContent.Name" xml:space="preserve">
+    <value>mpnLeftContent</value>
   </data>
-  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;mpnLeftContent.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mpnLeftContent.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;mpnLeftContent.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="mpnLeftDoor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <data name="btnDoorleft.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom</value>
+  <data name="&gt;&gt;pnlLeftDoorL.Name" xml:space="preserve">
+    <value>pnlLeftDoorL</value>
   </data>
-  <data name="btnDoorleft.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnDoorleft.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Webdings, 9pt</value>
-  </data>
-  <data name="btnDoorleft.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDoorleft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnDoorleft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 500</value>
-  </data>
-  <data name="btnDoorleft.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnDoorleft.Text" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btnDoorleft.Name" xml:space="preserve">
-    <value>btnDoorleft</value>
-  </data>
-  <data name="&gt;&gt;btnDoorleft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDoorleft.Parent" xml:space="preserve">
-    <value>Panel3</value>
-  </data>
-  <data name="&gt;&gt;btnDoorleft.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 30</value>
-  </data>
-  <data name="Panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 500</value>
-  </data>
-  <data name="Panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Panel3.Name" xml:space="preserve">
-    <value>Panel3</value>
-  </data>
-  <data name="&gt;&gt;Panel3.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnlLeftDoorL.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Panel3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;pnlLeftDoorL.Parent" xml:space="preserve">
+    <value>mpnLeftDoor</value>
   </data>
-  <data name="&gt;&gt;Panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
-  </data>
-  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 500</value>
-  </data>
-  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pnlLeftDoorL.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="MetroPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+  <data name="&gt;&gt;pnlLeftDoorR.Name" xml:space="preserve">
+    <value>pnlLeftDoorR</value>
   </data>
-  <data name="MetroPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 30</value>
+  <data name="&gt;&gt;pnlLeftDoorR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="MetroPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 500</value>
+  <data name="&gt;&gt;pnlLeftDoorR.Parent" xml:space="preserve">
+    <value>mpnLeftDoor</value>
   </data>
-  <data name="MetroPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;MetroPanel2.Name" xml:space="preserve">
-    <value>MetroPanel2</value>
-  </data>
-  <data name="&gt;&gt;MetroPanel2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;MetroPanel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MetroPanel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pnlLeftDoorR.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="MetroPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+  <data name="mpnLeftDoor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 30</value>
   </data>
-  <data name="MetroPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>500, 30</value>
+  <data name="mpnLeftDoor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="MetroPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 500</value>
+  <data name="mpnLeftDoor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 500</value>
   </data>
-  <data name="MetroPanel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="mpnLeftDoor.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;MetroPanel1.Name" xml:space="preserve">
-    <value>MetroPanel1</value>
+  <data name="&gt;&gt;mpnLeftDoor.Name" xml:space="preserve">
+    <value>mpnLeftDoor</value>
   </data>
-  <data name="&gt;&gt;MetroPanel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;mpnLeftDoor.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;MetroPanel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mpnLeftDoor.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;MetroPanel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;mpnLeftDoor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mpnLeftMenu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="mlnLT1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="mlnLT1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 60</value>
+  </data>
+  <data name="mlnLT1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;mlnLT1.Name" xml:space="preserve">
+    <value>mlnLT1</value>
+  </data>
+  <data name="&gt;&gt;mlnLT1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLink, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mlnLT1.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mlnLT1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mlnLT2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 61</value>
+  </data>
+  <data name="mlnLT2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 60</value>
+  </data>
+  <data name="mlnLT2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;mlnLT2.Name" xml:space="preserve">
+    <value>mlnLT2</value>
+  </data>
+  <data name="&gt;&gt;mlnLT2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLink, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mlnLT2.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mlnLT2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mlnLT3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 121</value>
+  </data>
+  <data name="mlnLT3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 60</value>
+  </data>
+  <data name="mlnLT3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;mlnLT3.Name" xml:space="preserve">
+    <value>mlnLT3</value>
+  </data>
+  <data name="&gt;&gt;mlnLT3.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLink, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mlnLT3.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mlnLT3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mlnLT4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 181</value>
+  </data>
+  <data name="mlnLT4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 60</value>
+  </data>
+  <data name="mlnLT4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;mlnLT4.Name" xml:space="preserve">
+    <value>mlnLT4</value>
+  </data>
+  <data name="&gt;&gt;mlnLT4.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLink, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mlnLT4.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mlnLT4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="mlnLB1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="mlnLB1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 380</value>
+  </data>
+  <data name="mlnLB1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 60</value>
+  </data>
+  <data name="mlnLB1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;mlnLB1.Name" xml:space="preserve">
+    <value>mlnLB1</value>
+  </data>
+  <data name="&gt;&gt;mlnLB1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLink, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mlnLB1.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mlnLB1.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="mlnLB2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="mlnLB2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 440</value>
+  </data>
+  <data name="mlnLB2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 60</value>
+  </data>
+  <data name="mlnLB2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;mlnLB2.Name" xml:space="preserve">
+    <value>mlnLB2</value>
+  </data>
+  <data name="&gt;&gt;mlnLB2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLink, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mlnLB2.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mlnLB2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="mtiLT1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="mtiLT1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 60</value>
+  </data>
+  <data name="mtiLT1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;mtiLT1.Name" xml:space="preserve">
+    <value>mtiLT1</value>
+  </data>
+  <data name="&gt;&gt;mtiLT1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mtiLT1.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mtiLT1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="mtiLT2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="mtiLT2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 60</value>
+  </data>
+  <data name="mtiLT2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;mtiLT2.Name" xml:space="preserve">
+    <value>mtiLT2</value>
+  </data>
+  <data name="&gt;&gt;mtiLT2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mtiLT2.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mtiLT2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="mtiLT3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 121</value>
+  </data>
+  <data name="mtiLT3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 60</value>
+  </data>
+  <data name="mtiLT3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;mtiLT3.Name" xml:space="preserve">
+    <value>mtiLT3</value>
+  </data>
+  <data name="&gt;&gt;mtiLT3.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mtiLT3.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mtiLT3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="mtiLT4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 181</value>
+  </data>
+  <data name="mtiLT4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 60</value>
+  </data>
+  <data name="mtiLT4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;mtiLT4.Name" xml:space="preserve">
+    <value>mtiLT4</value>
+  </data>
+  <data name="&gt;&gt;mtiLT4.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mtiLT4.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mtiLT4.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="mtiLB1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="mtiLB1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 380</value>
+  </data>
+  <data name="mtiLB1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 60</value>
+  </data>
+  <data name="mtiLB1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;mtiLB1.Name" xml:space="preserve">
+    <value>mtiLB1</value>
+  </data>
+  <data name="&gt;&gt;mtiLB1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mtiLB1.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mtiLB1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="mtiLB2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="mtiLB2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 440</value>
+  </data>
+  <data name="mtiLB2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 60</value>
+  </data>
+  <data name="mtiLB2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;mtiLB2.Name" xml:space="preserve">
+    <value>mtiLB2</value>
+  </data>
+  <data name="&gt;&gt;mtiLB2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mtiLB2.Parent" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mtiLB2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="mpnLeftMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="mpnLeftMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mpnLeftMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 500</value>
+  </data>
+  <data name="mpnLeftMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;mpnLeftMenu.Name" xml:space="preserve">
+    <value>mpnLeftMenu</value>
+  </data>
+  <data name="&gt;&gt;mpnLeftMenu.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mpnLeftMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mpnLeftMenu.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -717,11 +1057,32 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 2, 4, 2</value>
   </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 470</value>
+  </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 60, 0, 30</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>ViewLDD</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem2.Name" xml:space="preserve">
+    <value>ToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem3.Name" xml:space="preserve">
+    <value>ToolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem4.Name" xml:space="preserve">
+    <value>ToolStripMenuItem4</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;mseMain.Name" xml:space="preserve">
     <value>mseMain</value>
@@ -740,5 +1101,59 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="pnlLeftDoorL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="pnlLeftDoorL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlLeftDoorL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pnlLeftDoorL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 500</value>
+  </data>
+  <data name="pnlLeftDoorL.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorL.Name" xml:space="preserve">
+    <value>pnlLeftDoorL</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorL.Parent" xml:space="preserve">
+    <value>mpnLeftDoor</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlLeftDoorR.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="pnlLeftDoorR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 0</value>
+  </data>
+  <data name="pnlLeftDoorR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pnlLeftDoorR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 500</value>
+  </data>
+  <data name="pnlLeftDoorR.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorR.Name" xml:space="preserve">
+    <value>pnlLeftDoorR</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorR.Parent" xml:space="preserve">
+    <value>mpnLeftDoor</value>
+  </data>
+  <data name="&gt;&gt;pnlLeftDoorR.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
 </root>

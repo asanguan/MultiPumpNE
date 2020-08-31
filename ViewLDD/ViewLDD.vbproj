@@ -152,9 +152,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\LDDVIEW.ICO" />
+    <None Include="Resources\mnuFile.png" />
+    <None Include="Resources\mnuEdit.png" />
+    <None Include="Resources\mnuSetting.png" />
+    <None Include="Resources\mnuSetting_focus.png" />
+    <None Include="Resources\mnuSetting_nofocus.png" />
     <None Include="Resources\LDDVIEWico.png" />
     <None Include="Resources\LDDVIEW.png" />
-    <None Include="Resources\mnuSetting.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
