@@ -121,12 +121,20 @@
     <value>Test</value>
     <comment>For Test</comment>
   </data>
-  <data name="mnuCalc" xml:space="preserve">
-    <value>Calculation</value>
-    <comment>25</comment>
-  </data>
   <data name="mnuCDark" xml:space="preserve">
     <value>Dark</value>
+  </data>
+  <data name="mnuChangeLN" xml:space="preserve">
+    <value>Change-lot number</value>
+    <comment>162</comment>
+  </data>
+  <data name="mnuChangePN" xml:space="preserve">
+    <value>Change-part number</value>
+    <comment>161</comment>
+  </data>
+  <data name="mnuChangeSN" xml:space="preserve">
+    <value>Change-serial number</value>
+    <comment>163</comment>
   </data>
   <data name="mnuCLDDViewer" xml:space="preserve">
     <value>LDD Viewer</value>
@@ -142,17 +150,20 @@
     <value>Data(&amp;D)</value>
     <comment>177</comment>
   </data>
+  <data name="mnuDeleteCard" xml:space="preserve">
+    <value>Delete Card</value>
+    <comment>172</comment>
+  </data>
   <data name="mnuEdit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Edit(&amp;E)</value>
     <comment>159</comment>
+  </data>
+  <data name="mnuExit" xml:space="preserve">
+    <value>Exit Application (&amp;X)</value>
   </data>
   <data name="mnuFile" xml:space="preserve">
     <value>File(&amp;F)</value>
     <comment>154</comment>
-  </data>
-  <data name="mnuFileSave" xml:space="preserve">
-    <value>Save data</value>
-    <comment>155</comment>
   </data>
   <data name="mnuGraph" xml:space="preserve">
     <value>Change graph axis</value>
@@ -165,9 +176,17 @@
   <data name="mnuOpen" xml:space="preserve">
     <value>Open</value>
   </data>
+  <data name="mnuReCalc" xml:space="preserve">
+    <value>Re-calculation</value>
+    <comment>25</comment>
+  </data>
   <data name="mnuReCalcVf" xml:space="preserve">
     <value>Re-calculation Vf</value>
     <comment>922</comment>
+  </data>
+  <data name="mnuSave" xml:space="preserve">
+    <value>Save Data</value>
+    <comment>155</comment>
   </data>
   <data name="mnuSearch" xml:space="preserve">
     <value>Search</value>

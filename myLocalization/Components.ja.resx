@@ -121,12 +121,20 @@
     <value>テスト</value>
     <comment>For Test</comment>
   </data>
-  <data name="mnuCalc" xml:space="preserve">
-    <value>再計算</value>
-    <comment>25</comment>
-  </data>
   <data name="mnuCDark" xml:space="preserve">
     <value>濃色</value>
+  </data>
+  <data name="mnuChangeLN" xml:space="preserve">
+    <value>変更 - ロット番号</value>
+    <comment>162</comment>
+  </data>
+  <data name="mnuChangePN" xml:space="preserve">
+    <value>変更 - 型式</value>
+    <comment>161</comment>
+  </data>
+  <data name="mnuChangeSN" xml:space="preserve">
+    <value>変更 - シリアル番号</value>
+    <comment>163</comment>
   </data>
   <data name="mnuCLDDViewer" xml:space="preserve">
     <value>LDDビューア</value>
@@ -142,17 +150,20 @@
     <value>ﾃﾞｰﾀ(&amp;D)</value>
     <comment>177</comment>
   </data>
+  <data name="mnuDeleteCard" xml:space="preserve">
+    <value>カード削除</value>
+    <comment>172</comment>
+  </data>
   <data name="mnuEdit" xml:space="preserve">
-    <value>編集</value>
+    <value>編集(&amp;E)</value>
     <comment>159</comment>
+  </data>
+  <data name="mnuExit" xml:space="preserve">
+    <value>アプリ終了(&amp;X)</value>
   </data>
   <data name="mnuFile" xml:space="preserve">
     <value>ﾌｧｲﾙ(&amp;F)</value>
     <comment>154</comment>
-  </data>
-  <data name="mnuFileSave" xml:space="preserve">
-    <value>データ保存</value>
-    <comment>155</comment>
   </data>
   <data name="mnuGraph" xml:space="preserve">
     <value>グラフ軸変更</value>
@@ -165,9 +176,17 @@
   <data name="mnuOpen" xml:space="preserve">
     <value>開く</value>
   </data>
+  <data name="mnuReCalc" xml:space="preserve">
+    <value>再計算</value>
+    <comment>25</comment>
+  </data>
   <data name="mnuReCalcVf" xml:space="preserve">
     <value>Vf再計算</value>
     <comment>922</comment>
+  </data>
+  <data name="mnuSave" xml:space="preserve">
+    <value>データ保存</value>
+    <comment>155</comment>
   </data>
   <data name="mnuSearch" xml:space="preserve">
     <value>検索</value>

@@ -74,20 +74,38 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Calculation.
-        '''</summary>
-        Public Shared ReadOnly Property mnuCalc() As String
-            Get
-                Return ResourceManager.GetString("mnuCalc", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized string similar to Dark.
         '''</summary>
         Public Shared ReadOnly Property mnuCDark() As String
             Get
                 Return ResourceManager.GetString("mnuCDark", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Change-lot number.
+        '''</summary>
+        Public Shared ReadOnly Property mnuChangeLN() As String
+            Get
+                Return ResourceManager.GetString("mnuChangeLN", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Change-part number.
+        '''</summary>
+        Public Shared ReadOnly Property mnuChangePN() As String
+            Get
+                Return ResourceManager.GetString("mnuChangePN", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Change-serial number.
+        '''</summary>
+        Public Shared ReadOnly Property mnuChangeSN() As String
+            Get
+                Return ResourceManager.GetString("mnuChangeSN", resourceCulture)
             End Get
         End Property
         
@@ -128,11 +146,29 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Edit.
+        '''  Looks up a localized string similar to Delete Card.
+        '''</summary>
+        Public Shared ReadOnly Property mnuDeleteCard() As String
+            Get
+                Return ResourceManager.GetString("mnuDeleteCard", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Edit(&amp;E).
         '''</summary>
         Public Shared ReadOnly Property mnuEdit() As String
             Get
                 Return ResourceManager.GetString("mnuEdit", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Exit Application (&amp;X).
+        '''</summary>
+        Public Shared ReadOnly Property mnuExit() As String
+            Get
+                Return ResourceManager.GetString("mnuExit", resourceCulture)
             End Get
         End Property
         
@@ -142,15 +178,6 @@ Namespace My.Resources
         Public Shared ReadOnly Property mnuFile() As String
             Get
                 Return ResourceManager.GetString("mnuFile", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Save data.
-        '''</summary>
-        Public Shared ReadOnly Property mnuFileSave() As String
-            Get
-                Return ResourceManager.GetString("mnuFileSave", resourceCulture)
             End Get
         End Property
         
@@ -182,11 +209,29 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Re-calculation.
+        '''</summary>
+        Public Shared ReadOnly Property mnuReCalc() As String
+            Get
+                Return ResourceManager.GetString("mnuReCalc", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Re-calculation Vf.
         '''</summary>
         Public Shared ReadOnly Property mnuReCalcVf() As String
             Get
                 Return ResourceManager.GetString("mnuReCalcVf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Save Data.
+        '''</summary>
+        Public Shared ReadOnly Property mnuSave() As String
+            Get
+                Return ResourceManager.GetString("mnuSave", resourceCulture)
             End Get
         End Property
         
