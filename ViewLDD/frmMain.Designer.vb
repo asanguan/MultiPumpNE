@@ -82,10 +82,14 @@ Partial Class frmMain
         Me.mcmTitleMenu4 = New MetroFramework.Controls.MetroContextMenu(Me.components)
         Me.mnuSort = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuMark = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuGraph = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuReCalc = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuWrite = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuWriteNum = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuGraph = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mcmLB2 = New MetroFramework.Controls.MetroContextMenu(Me.components)
+        Me.mnuSettings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuTheme = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuLanguage = New System.Windows.Forms.ToolStripMenuItem()
         Me.mcmTitleMenu1.SuspendLayout()
         CType(Me.msmMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mpnLeftMenu.SuspendLayout()
@@ -95,6 +99,7 @@ Partial Class frmMain
         Me.mcmTitleMenu2.SuspendLayout()
         Me.mcmTitleMenu3.SuspendLayout()
         Me.mcmTitleMenu4.SuspendLayout()
+        Me.mcmLB2.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblLanguage
@@ -160,7 +165,8 @@ Partial Class frmMain
         'msmMain
         '
         Me.msmMain.Owner = Me
-        Me.msmMain.Style = MetroFramework.MetroColorStyle.Lime
+        Me.msmMain.Style = MetroFramework.MetroColorStyle.Pink
+        Me.msmMain.Theme = MetroFramework.MetroThemeStyle.Dark
         '
         'mpnLeftMenu
         '
@@ -587,6 +593,11 @@ Partial Class frmMain
         Me.mnuMark.Name = "mnuMark"
         resources.ApplyResources(Me.mnuMark, "mnuMark")
         '
+        'mnuGraph
+        '
+        Me.mnuGraph.Name = "mnuGraph"
+        resources.ApplyResources(Me.mnuGraph, "mnuGraph")
+        '
         'mnuReCalc
         '
         Me.mnuReCalc.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
@@ -603,10 +614,31 @@ Partial Class frmMain
         Me.mnuWriteNum.Name = "mnuWriteNum"
         resources.ApplyResources(Me.mnuWriteNum, "mnuWriteNum")
         '
-        'mnuGraph
+        'mcmLB2
         '
-        Me.mnuGraph.Name = "mnuGraph"
-        resources.ApplyResources(Me.mnuGraph, "mnuGraph")
+        Me.mcmLB2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        resources.ApplyResources(Me.mcmLB2, "mcmLB2")
+        Me.mcmLB2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.mcmLB2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSettings, Me.mnuTheme, Me.mnuLanguage})
+        Me.mcmLB2.Name = "MetroContextMenu1"
+        Me.mcmLB2.ShowImageMargin = False
+        '
+        'mnuSettings
+        '
+        Me.mnuSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.mnuSettings.Name = "mnuSettings"
+        resources.ApplyResources(Me.mnuSettings, "mnuSettings")
+        '
+        'mnuTheme
+        '
+        Me.mnuTheme.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.mnuTheme.Name = "mnuTheme"
+        resources.ApplyResources(Me.mnuTheme, "mnuTheme")
+        '
+        'mnuLanguage
+        '
+        Me.mnuLanguage.Name = "mnuLanguage"
+        resources.ApplyResources(Me.mnuLanguage, "mnuLanguage")
         '
         'frmMain
         '
@@ -641,6 +673,7 @@ Partial Class frmMain
         Me.mcmTitleMenu2.ResumeLayout(False)
         Me.mcmTitleMenu3.ResumeLayout(False)
         Me.mcmTitleMenu4.ResumeLayout(False)
+        Me.mcmLB2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -706,4 +739,8 @@ Partial Class frmMain
     Friend WithEvents mnuWrite As ToolStripMenuItem
     Friend WithEvents mnuWriteNum As ToolStripMenuItem
     Friend WithEvents mnuGraph As ToolStripMenuItem
+    Friend WithEvents mcmLB2 As MetroFramework.Controls.MetroContextMenu
+    Friend WithEvents mnuSettings As ToolStripMenuItem
+    Friend WithEvents mnuTheme As ToolStripMenuItem
+    Friend WithEvents mnuLanguage As ToolStripMenuItem
 End Class

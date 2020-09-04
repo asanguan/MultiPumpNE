@@ -356,7 +356,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu3.Name" xml:space="preserve">
     <value>mtlTitleMenu3</value>
@@ -368,7 +368,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu2.Name" xml:space="preserve">
     <value>mtlTitleMenu2</value>
@@ -380,7 +380,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu1.Name" xml:space="preserve">
     <value>mtlTitleMenu1</value>
@@ -392,7 +392,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;mpnRightMenu.Name" xml:space="preserve">
     <value>mpnRightMenu</value>
@@ -404,7 +404,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnRightMenu.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;mpnRightContent.Name" xml:space="preserve">
     <value>mpnRightContent</value>
@@ -416,7 +416,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnRightContent.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;mpnLeftDoor.Name" xml:space="preserve">
     <value>mpnLeftDoor</value>
@@ -428,7 +428,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnLeftDoor.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;mpnLeftMenu.Name" xml:space="preserve">
     <value>mpnLeftMenu</value>
@@ -440,7 +440,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnLeftMenu.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;mpnLeftContent.Name" xml:space="preserve">
     <value>mpnLeftContent</value>
@@ -452,7 +452,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnLeftContent.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;mpnData.Name" xml:space="preserve">
     <value>mpnData</value>
@@ -464,7 +464,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnData.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;mpnMain.Name" xml:space="preserve">
     <value>mpnMain</value>
@@ -476,7 +476,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnMain.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -919,6 +919,12 @@
   <data name="&gt;&gt;mnuMark.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;mnuGraph.Name" xml:space="preserve">
+    <value>mnuGraph</value>
+  </data>
+  <data name="&gt;&gt;mnuGraph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;mnuReCalc.Name" xml:space="preserve">
     <value>mnuReCalc</value>
   </data>
@@ -937,10 +943,22 @@
   <data name="&gt;&gt;mnuWriteNum.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;mnuGraph.Name" xml:space="preserve">
-    <value>mnuGraph</value>
+  <data name="&gt;&gt;mnuSettings.Name" xml:space="preserve">
+    <value>mnuSettings</value>
   </data>
-  <data name="&gt;&gt;mnuGraph.Type" xml:space="preserve">
+  <data name="&gt;&gt;mnuSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTheme.Name" xml:space="preserve">
+    <value>mnuTheme</value>
+  </data>
+  <data name="&gt;&gt;mnuTheme.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuLanguage.Name" xml:space="preserve">
+    <value>mnuLanguage</value>
+  </data>
+  <data name="&gt;&gt;mnuLanguage.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
@@ -1118,7 +1136,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnLeftMenu.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="mlnLT1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 1</value>
@@ -1351,6 +1369,9 @@
   <data name="mtiLB1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
+  <data name="mtiLB1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;mtiLB1.Name" xml:space="preserve">
     <value>mtiLB1</value>
   </data>
@@ -1374,6 +1395,9 @@
   </data>
   <data name="mtiLB2.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="mtiLB2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;mtiLB2.Name" xml:space="preserve">
     <value>mtiLB2</value>
@@ -1436,7 +1460,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnLeftDoor.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="pnlLeftDoorL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1514,7 +1538,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnLeftContent.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;mlnRT1.Name" xml:space="preserve">
     <value>mlnRT1</value>
@@ -1637,7 +1661,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnRightMenu.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="mlnRT1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 1</value>
@@ -1829,7 +1853,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnRightContent.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="mpnMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1853,7 +1877,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnMain.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="mpnData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
@@ -1877,7 +1901,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mpnData.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="mtlTitleMenu1.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 0</value>
@@ -1904,7 +1928,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="mtlTitleMenu2.Location" type="System.Drawing.Point, System.Drawing">
     <value>100, 0</value>
@@ -1931,7 +1955,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="mtlTitleMenu3.Location" type="System.Drawing.Point, System.Drawing">
     <value>170, 0</value>
@@ -1958,7 +1982,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="mtlTitleMenu4.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 0</value>
@@ -1985,7 +2009,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mtlTitleMenu4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="mcmTitleMenu2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>145, 17</value>
@@ -2096,39 +2120,78 @@
     <value>MetroFramework.Controls.MetroContextMenu, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="mnuSort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="mnuSort.Text" xml:space="preserve">
     <value>Sort</value>
   </data>
   <data name="mnuMark.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="mnuMark.Text" xml:space="preserve">
     <value>Mark Card</value>
   </data>
+  <data name="mnuGraph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="mnuGraph.Text" xml:space="preserve">
+    <value>Change graph axis</value>
+  </data>
   <data name="mnuReCalc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="mnuReCalc.Text" xml:space="preserve">
     <value>Re-calculation</value>
   </data>
   <data name="mnuWrite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="mnuWrite.Text" xml:space="preserve">
     <value>Export view data</value>
   </data>
   <data name="mnuWriteNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="mnuWriteNum.Text" xml:space="preserve">
     <value>Export graph data</value>
   </data>
-  <data name="mnuGraph.Size" type="System.Drawing.Size, System.Drawing">
+  <metadata name="mcmLB2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 57</value>
+  </metadata>
+  <data name="mcmLB2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mcmLB2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="mnuSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 22</value>
   </data>
-  <data name="mnuGraph.Text" xml:space="preserve">
-    <value>Change graph axis</value>
+  <data name="mnuSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="mnuTheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="mnuTheme.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="mnuLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="mnuLanguage.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="mcmLB2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 70</value>
+  </data>
+  <data name="mcmLB2.Text" xml:space="preserve">
+    <value>mcmLB2</value>
+  </data>
+  <data name="&gt;&gt;mcmLB2.Name" xml:space="preserve">
+    <value>mcmLB2</value>
+  </data>
+  <data name="&gt;&gt;mcmLB2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroContextMenu, MetroFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
 </root>

@@ -169,6 +169,9 @@
     <value>Change graph axis</value>
     <comment>180</comment>
   </data>
+  <data name="mnuLanguage" xml:space="preserve">
+    <value>日本語へ言語切替</value>
+  </data>
   <data name="mnuMark" xml:space="preserve">
     <value>Mark card</value>
     <comment>83</comment>
@@ -192,6 +195,9 @@
     <value>Search</value>
     <comment>178</comment>
   </data>
+  <data name="mnuSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
   <data name="mnuSmsrPoint" xml:space="preserve">
     <value>SMSR point</value>
     <comment>176</comment>
@@ -199,6 +205,9 @@
   <data name="mnuSort" xml:space="preserve">
     <value>Sort</value>
     <comment>179</comment>
+  </data>
+  <data name="mnuTheme" xml:space="preserve">
+    <value>Change theme (Light/Dark)</value>
   </data>
   <data name="mnuView" xml:space="preserve">
     <value>View(&amp;V)</value>

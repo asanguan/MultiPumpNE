@@ -169,6 +169,9 @@
     <value>グラフ軸変更</value>
     <comment>180</comment>
   </data>
+  <data name="mnuLanguage" xml:space="preserve">
+    <value>Change Language to English</value>
+  </data>
   <data name="mnuMark" xml:space="preserve">
     <value>マークカード</value>
     <comment>83</comment>
@@ -192,6 +195,9 @@
     <value>検索</value>
     <comment>178</comment>
   </data>
+  <data name="mnuSettings" xml:space="preserve">
+    <value>設定</value>
+  </data>
   <data name="mnuSmsrPoint" xml:space="preserve">
     <value>SMSRポイント</value>
     <comment>176</comment>
@@ -199,6 +205,9 @@
   <data name="mnuSort" xml:space="preserve">
     <value>ソート</value>
     <comment>179</comment>
+  </data>
+  <data name="mnuTheme" xml:space="preserve">
+    <value>テーマ切替(濃色/淡色)</value>
   </data>
   <data name="mnuView" xml:space="preserve">
     <value>表示(&amp;V)</value>

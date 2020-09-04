@@ -1,5 +1,6 @@
 ﻿Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
+Imports MetroFramework
 
 Public Class frmMain
     Sub New()
@@ -15,6 +16,13 @@ Public Class frmMain
         Globalization.CultureInfo.DefaultThreadCurrentUICulture = cul
 
         Me.StyleManager = msmMain
+        Select Case My.Settings.Theme
+            Case "Dark"
+                Me.StyleManager.Theme = MetroThemeStyle.Dark
+            Case "Light"
+                Me.StyleManager.Theme = MetroThemeStyle.Light
+        End Select
+        My.Settings.Theme = Me.StyleManager.Theme.ToString
 
     End Sub
 
@@ -25,7 +33,7 @@ Public Class frmMain
         'Button1.Font = New Font("Webdings", 11.0F)
         'btnLeftdoor.Font = New Font("Webdings", 11.0F)
 
-#Region "TitleMenu"
+#Region "Load - TitleMenu"
         mtlTitleMenu1.Text = myLocalization.My.Resources.Components.mnuFile
         mnuOpen.Text = myLocalization.My.Resources.Components.mnuOpen
         mnuSave.Text = myLocalization.My.Resources.Components.mnuSave
@@ -51,11 +59,13 @@ Public Class frmMain
         mnuSort.Text = myLocalization.My.Resources.Components.mnuSort
         mnuWrite.Text = myLocalization.My.Resources.Components.mnuWrite
         mnuWriteNum.Text = myLocalization.My.Resources.Components.mnuWriteNum
+#End Region
 
-    End Sub
-
-    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
-
+#Region "LeftMenu"
+        mnuSettings.Text = myLocalization.My.Resources.Components.mnuSettings
+        mnuTheme.Text = myLocalization.My.Resources.Components.mnuTheme
+        mnuLanguage.Text = myLocalization.My.Resources.Components.mnuLanguage
+#End Region
     End Sub
 
     Private Sub mtlTitleMenu1_Click(sender As Object, e As EventArgs) Handles mtlTitleMenu1.Click
@@ -78,5 +88,29 @@ Public Class frmMain
         mcmTitleMenu4.Show(mtlTitleMenu4, 0, mtlTitleMenu4.Height)
     End Sub
 
-#End Region
+    Private Sub mlnLB2_Click(sender As Object, e As EventArgs) Handles mlnLB2.Click
+        mcmLB2.Show(mlnLB2, 40, mlnLB2.Height - 100)
+    End Sub
+
+    Private Sub mnuLanguage_Click(sender As Object, e As EventArgs) Handles mnuLanguage.Click
+        'Dim cul As New Globalization.CultureInfo(My.Settings.Language)
+
+        Select Case My.Settings.Language
+            Case "en"
+                My.Settings.Language = "ja"
+            Case "ja"
+                My.Settings.Language = "en"
+        End Select
+        Application.Restart()
+    End Sub
+
+    Private Sub mnuTheme_Click(sender As Object, e As EventArgs) Handles mnuTheme.Click
+        Select Case Me.StyleManager.Theme
+            Case 2
+                My.Settings.Theme = "Light"
+            Case 1
+                My.Settings.Theme = "Dark"
+        End Select
+        Application.Restart()
+    End Sub
 End Class

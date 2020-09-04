@@ -191,6 +191,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to 日本語へ言語切替.
+        '''</summary>
+        Public Shared ReadOnly Property mnuLanguage() As String
+            Get
+                Return ResourceManager.GetString("mnuLanguage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Mark card.
         '''</summary>
         Public Shared ReadOnly Property mnuMark() As String
@@ -245,6 +254,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Settings.
+        '''</summary>
+        Public Shared ReadOnly Property mnuSettings() As String
+            Get
+                Return ResourceManager.GetString("mnuSettings", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to SMSR point.
         '''</summary>
         Public Shared ReadOnly Property mnuSmsrPoint() As String
@@ -259,6 +277,15 @@ Namespace My.Resources
         Public Shared ReadOnly Property mnuSort() As String
             Get
                 Return ResourceManager.GetString("mnuSort", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Change theme (Light/Dark).
+        '''</summary>
+        Public Shared ReadOnly Property mnuTheme() As String
+            Get
+                Return ResourceManager.GetString("mnuTheme", resourceCulture)
             End Get
         End Property
         
