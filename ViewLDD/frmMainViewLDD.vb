@@ -1,8 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 Imports MetroFramework
-
-Public Class frmMain
+Public Class frmMainViewLDD
     Dim LeftDoorState As DoorState
     Enum DoorState
         Close
@@ -32,12 +31,9 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmMainViewLDD_Load(sender As Object, e As EventArgs) Handles Me.Load
         btnTest.Text = myLocalization.My.Resources.Components.mnuOpen
         lblLanguage.Text = My.Settings.Language
-
-        'Button1.Font = New Font("Webdings", 11.0F)
-        'btnLeftdoor.Font = New Font("Webdings", 11.0F)
 
 #Region "Load - TitleMenu"
         mtlTitleMenu1.Text = myLocalization.My.Resources.Components.mnuFile
@@ -89,37 +85,29 @@ Public Class frmMain
     Private Sub LeftDoorClose()
         mpnLeftMenu.Visible = False
         mpnLeftContent.Visible = False
-        With mpnLeftDoor
-            .Visible = True
-            .Left = 0
-        End With
+        mpnLeftDoor.Visible = True
+        mpnLeft.Width = My.Settings.LeftDoorWidth
         btnLeftDoor.Text = 4
+        Call TileReset_LT()
         LeftDoorState = DoorState.Close
-        mpnData.Left = My.Settings.LeftMenuWidth
     End Sub
 
     Private Sub LeftDoorHalfOpen()
         mpnLeftMenu.Visible = True
         mpnLeftContent.Visible = False
-        With mpnLeftDoor
-            .Visible = True
-            .Left = My.Settings.LeftMenuWidth
-        End With
+        mpnLeftDoor.Visible = True
+        mpnLeft.Width = My.Settings.LeftMenuWidth + My.Settings.LeftDoorWidth
         btnLeftDoor.Text = 3
         LeftDoorState = DoorState.HalfOpen
-        mpnData.Left = My.Settings.LeftMenuWidth + My.Settings.LeftContentWidth
     End Sub
 
     Private Sub LeftDoorFullOpen()
         mpnLeftMenu.Visible = True
         mpnLeftContent.Visible = True
-        With mpnLeftDoor
-            .Visible = True
-            .Left = My.Settings.LeftMenuWidth + My.Settings.LeftContentWidth
-        End With
+        mpnLeftDoor.Visible = True
+        mpnLeft.Width = My.Settings.LeftMenuWidth + My.Settings.LeftContentWidth + My.Settings.LeftDoorWidth
         btnLeftDoor.Text = 3
         LeftDoorState = DoorState.FullOpen
-        mpnData.Left = My.Settings.LeftMenuWidth + My.Settings.LeftContentWidth + My.Settings.LeftDoorWidth
     End Sub
 
     Private Sub TileReset_LT()
@@ -138,8 +126,18 @@ Public Class frmMain
         Next
     End Sub
 #End Region
+    Private Sub btnLeftDoor_Click(sender As Object, e As EventArgs) Handles btnLeftDoor.Click
+        Select Case LeftDoorState
+            Case DoorState.Close
+                Call LeftDoorHalfOpen()
+            Case DoorState.HalfOpen
+                Call LeftDoorClose()
+            Case DoorState.FullOpen
+                Call LeftDoorClose()
+        End Select
+    End Sub
 
-
+#Region "Context Menu setting"
     Private Sub mtlTitleMenu1_Click(sender As Object, e As EventArgs) Handles mtlTitleMenu1.Click
         mcmTitleMenu1.Show(mtlTitleMenu1, 0, mtlTitleMenu1.Height)
     End Sub
@@ -160,13 +158,12 @@ Public Class frmMain
         mcmTitleMenu4.Show(mtlTitleMenu4, 0, mtlTitleMenu4.Height)
     End Sub
 
-    Private Sub mlnLB2_Click(sender As Object, e As EventArgs) Handles mlnLB1.Click
-        mcmLB2.Show(mlnLB1, 40, mlnLB1.Height - 100)
+    Private Sub mlnLB1_Click(sender As Object, e As EventArgs) Handles mlnLB1.Click
+        mcmLB1.Show(mlnLB1, 40, mlnLB1.Height - 100)
     End Sub
+#End Region
 
     Private Sub mnuLanguage_Click(sender As Object, e As EventArgs) Handles mnuLanguage.Click
-        'Dim cul As New Globalization.CultureInfo(My.Settings.Language)
-
         Select Case My.Settings.Language
             Case "en"
                 My.Settings.Language = "ja"
@@ -184,17 +181,6 @@ Public Class frmMain
                 My.Settings.Theme = "Dark"
         End Select
         Application.Restart()
-    End Sub
-
-    Private Sub btnLeftDoor_Click(sender As Object, e As EventArgs) Handles btnLeftDoor.Click
-        Select Case LeftDoorState
-            Case DoorState.Close
-                Call LeftDoorHalfOpen()
-            Case DoorState.HalfOpen
-                Call LeftDoorClose()
-            Case DoorState.FullOpen
-                Call LeftDoorClose()
-        End Select
     End Sub
 
     Private Sub mlnLT0_Click(sender As Object, e As EventArgs) Handles mlnLT0.Click
@@ -233,4 +219,5 @@ Public Class frmMain
         mtiLB(0).Visible = True
         mtiTest.Text = "Tile LB is active"
     End Sub
+
 End Class

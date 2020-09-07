@@ -93,9 +93,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property mnuEdit() As System.Drawing.Bitmap
+        Friend ReadOnly Property menuEdit_focus() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mnuEdit", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("menuEdit_focus", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -103,9 +103,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property mnuFile() As System.Drawing.Bitmap
+        Friend ReadOnly Property menuEdit_nofocus() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mnuFile", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("menuEdit_nofocus", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -113,9 +113,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property mnuSetting() As System.Drawing.Bitmap
+        Friend ReadOnly Property menuFile_focus() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mnuSetting", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("menuFile_focus", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -123,9 +123,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property mnuSetting_focus() As System.Drawing.Bitmap
+        Friend ReadOnly Property menuFile_nofocus() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mnuSetting_focus", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("menuFile_nofocus", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -133,9 +133,79 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property mnuSetting_nofocus() As System.Drawing.Bitmap
+        Friend ReadOnly Property menuHelp_focus() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mnuSetting_nofocus", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("menuHelp_focus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuHelp_nofocus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuHelp_nofocus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuMarker_focus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuMarker_focus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuMarker_nofocus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuMarker_nofocus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuOthers_focus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuOthers_focus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuOthers_nofocus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuOthers_nofocus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuSettings_focus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuSettings_focus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuSettings_nofocus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuSettings_nofocus", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

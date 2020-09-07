@@ -37,34 +37,36 @@ Partial Class frmMain
         Me.btnLeftDoor = New System.Windows.Forms.Button()
         Me.msmMain = New MetroFramework.Components.MetroStyleManager(Me.components)
         Me.mpnLeftMenu = New MetroFramework.Controls.MetroPanel()
+        Me.mlnLT0 = New MetroFramework.Controls.MetroLink()
         Me.mlnLT1 = New MetroFramework.Controls.MetroLink()
         Me.mlnLT2 = New MetroFramework.Controls.MetroLink()
         Me.mlnLT3 = New MetroFramework.Controls.MetroLink()
-        Me.mlnLT4 = New MetroFramework.Controls.MetroLink()
+        Me.mlnLB0 = New MetroFramework.Controls.MetroLink()
         Me.mlnLB1 = New MetroFramework.Controls.MetroLink()
-        Me.mlnLB2 = New MetroFramework.Controls.MetroLink()
+        Me.mtiLT0 = New MetroFramework.Controls.MetroTile()
         Me.mtiLT1 = New MetroFramework.Controls.MetroTile()
         Me.mtiLT2 = New MetroFramework.Controls.MetroTile()
         Me.mtiLT3 = New MetroFramework.Controls.MetroTile()
-        Me.mtiLT4 = New MetroFramework.Controls.MetroTile()
+        Me.mtiLB0 = New MetroFramework.Controls.MetroTile()
         Me.mtiLB1 = New MetroFramework.Controls.MetroTile()
-        Me.mtiLB2 = New MetroFramework.Controls.MetroTile()
         Me.mpnLeftDoor = New MetroFramework.Controls.MetroPanel()
         Me.pnlLeftDoorL = New System.Windows.Forms.Panel()
         Me.pnlLeftDoorR = New System.Windows.Forms.Panel()
         Me.mpnLeftContent = New MetroFramework.Controls.MetroPanel()
+        Me.mtiTest = New MetroFramework.Controls.MetroTile()
         Me.mpnRightMenu = New MetroFramework.Controls.MetroPanel()
+        Me.mlnRT0 = New MetroFramework.Controls.MetroLink()
         Me.mlnRT1 = New MetroFramework.Controls.MetroLink()
         Me.mlnRT2 = New MetroFramework.Controls.MetroLink()
         Me.mlnRT3 = New MetroFramework.Controls.MetroLink()
-        Me.mlnRT4 = New MetroFramework.Controls.MetroLink()
+        Me.mtiRT0 = New MetroFramework.Controls.MetroTile()
         Me.mtiRT1 = New MetroFramework.Controls.MetroTile()
         Me.mtiRT2 = New MetroFramework.Controls.MetroTile()
         Me.mtiRT3 = New MetroFramework.Controls.MetroTile()
-        Me.mtiRT4 = New MetroFramework.Controls.MetroTile()
         Me.mpnRightContent = New MetroFramework.Controls.MetroPanel()
         Me.mpnMain = New MetroFramework.Controls.MetroPanel()
         Me.mpnData = New MetroFramework.Controls.MetroPanel()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.mtlTitleMenu1 = New MetroFramework.Controls.MetroLink()
         Me.mtlTitleMenu2 = New MetroFramework.Controls.MetroLink()
         Me.mtlTitleMenu3 = New MetroFramework.Controls.MetroLink()
@@ -94,6 +96,7 @@ Partial Class frmMain
         CType(Me.msmMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mpnLeftMenu.SuspendLayout()
         Me.mpnLeftDoor.SuspendLayout()
+        Me.mpnLeftContent.SuspendLayout()
         Me.mpnRightMenu.SuspendLayout()
         Me.mpnData.SuspendLayout()
         Me.mcmTitleMenu2.SuspendLayout()
@@ -172,18 +175,18 @@ Partial Class frmMain
         '
         resources.ApplyResources(Me.mpnLeftMenu, "mpnLeftMenu")
         Me.mpnLeftMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.mpnLeftMenu.Controls.Add(Me.mlnLT0)
         Me.mpnLeftMenu.Controls.Add(Me.mlnLT1)
         Me.mpnLeftMenu.Controls.Add(Me.mlnLT2)
         Me.mpnLeftMenu.Controls.Add(Me.mlnLT3)
-        Me.mpnLeftMenu.Controls.Add(Me.mlnLT4)
+        Me.mpnLeftMenu.Controls.Add(Me.mlnLB0)
         Me.mpnLeftMenu.Controls.Add(Me.mlnLB1)
-        Me.mpnLeftMenu.Controls.Add(Me.mlnLB2)
+        Me.mpnLeftMenu.Controls.Add(Me.mtiLT0)
         Me.mpnLeftMenu.Controls.Add(Me.mtiLT1)
         Me.mpnLeftMenu.Controls.Add(Me.mtiLT2)
         Me.mpnLeftMenu.Controls.Add(Me.mtiLT3)
-        Me.mpnLeftMenu.Controls.Add(Me.mtiLT4)
+        Me.mpnLeftMenu.Controls.Add(Me.mtiLB0)
         Me.mpnLeftMenu.Controls.Add(Me.mtiLB1)
-        Me.mpnLeftMenu.Controls.Add(Me.mtiLB2)
         Me.mpnLeftMenu.HorizontalScrollbarBarColor = True
         Me.mpnLeftMenu.HorizontalScrollbarHighlightOnWheel = False
         Me.mpnLeftMenu.HorizontalScrollbarSize = 10
@@ -192,65 +195,73 @@ Partial Class frmMain
         Me.mpnLeftMenu.VerticalScrollbarHighlightOnWheel = False
         Me.mpnLeftMenu.VerticalScrollbarSize = 10
         '
+        'mlnLT0
+        '
+        Me.mlnLT0.AllowDrop = True
+        Me.mlnLT0.Image = Global.ViewLDD.My.Resources.Resources.menuFile_focus
+        Me.mlnLT0.ImageSize = 32
+        resources.ApplyResources(Me.mlnLT0, "mlnLT0")
+        Me.mlnLT0.Name = "mlnLT0"
+        Me.mlnLT0.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuFile_nofocus
+        Me.mlnLT0.UseSelectable = True
+        '
         'mlnLT1
         '
         Me.mlnLT1.AllowDrop = True
-        Me.mlnLT1.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
+        Me.mlnLT1.Image = Global.ViewLDD.My.Resources.Resources.menuEdit_focus
         Me.mlnLT1.ImageSize = 32
         resources.ApplyResources(Me.mlnLT1, "mlnLT1")
         Me.mlnLT1.Name = "mlnLT1"
-        Me.mlnLT1.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
+        Me.mlnLT1.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuEdit_nofocus
         Me.mlnLT1.UseSelectable = True
         '
         'mlnLT2
         '
         Me.mlnLT2.AllowDrop = True
-        Me.mlnLT2.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
+        Me.mlnLT2.Image = Global.ViewLDD.My.Resources.Resources.menuMarker_focus
         Me.mlnLT2.ImageSize = 32
         resources.ApplyResources(Me.mlnLT2, "mlnLT2")
         Me.mlnLT2.Name = "mlnLT2"
-        Me.mlnLT2.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
+        Me.mlnLT2.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuMarker_nofocus
         Me.mlnLT2.UseSelectable = True
         '
         'mlnLT3
         '
         Me.mlnLT3.AllowDrop = True
-        Me.mlnLT3.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
+        Me.mlnLT3.Image = Global.ViewLDD.My.Resources.Resources.menuOthers_focus
         Me.mlnLT3.ImageSize = 32
         resources.ApplyResources(Me.mlnLT3, "mlnLT3")
         Me.mlnLT3.Name = "mlnLT3"
-        Me.mlnLT3.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
+        Me.mlnLT3.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuOthers_nofocus
         Me.mlnLT3.UseSelectable = True
         '
-        'mlnLT4
+        'mlnLB0
         '
-        Me.mlnLT4.AllowDrop = True
-        Me.mlnLT4.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
-        Me.mlnLT4.ImageSize = 32
-        resources.ApplyResources(Me.mlnLT4, "mlnLT4")
-        Me.mlnLT4.Name = "mlnLT4"
-        Me.mlnLT4.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
-        Me.mlnLT4.UseSelectable = True
+        Me.mlnLB0.AllowDrop = True
+        resources.ApplyResources(Me.mlnLB0, "mlnLB0")
+        Me.mlnLB0.Image = Global.ViewLDD.My.Resources.Resources.menuHelp_focus
+        Me.mlnLB0.ImageSize = 32
+        Me.mlnLB0.Name = "mlnLB0"
+        Me.mlnLB0.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuHelp_nofocus
+        Me.mlnLB0.UseSelectable = True
         '
         'mlnLB1
         '
         Me.mlnLB1.AllowDrop = True
         resources.ApplyResources(Me.mlnLB1, "mlnLB1")
-        Me.mlnLB1.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
         Me.mlnLB1.ImageSize = 32
         Me.mlnLB1.Name = "mlnLB1"
-        Me.mlnLB1.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
+        Me.mlnLB1.NoFocusImage = CType(resources.GetObject("mlnLB1.NoFocusImage"), System.Drawing.Image)
         Me.mlnLB1.UseSelectable = True
         '
-        'mlnLB2
+        'mtiLT0
         '
-        Me.mlnLB2.AllowDrop = True
-        resources.ApplyResources(Me.mlnLB2, "mlnLB2")
-        Me.mlnLB2.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
-        Me.mlnLB2.ImageSize = 32
-        Me.mlnLB2.Name = "mlnLB2"
-        Me.mlnLB2.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
-        Me.mlnLB2.UseSelectable = True
+        Me.mtiLT0.ActiveControl = Nothing
+        Me.mtiLT0.ContextMenuStrip = Me.mcmTitleMenu1
+        resources.ApplyResources(Me.mtiLT0, "mtiLT0")
+        Me.mtiLT0.Name = "mtiLT0"
+        Me.mtiLT0.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.mtiLT0.UseSelectable = True
         '
         'mtiLT1
         '
@@ -264,7 +275,6 @@ Partial Class frmMain
         'mtiLT2
         '
         Me.mtiLT2.ActiveControl = Nothing
-        Me.mtiLT2.ContextMenuStrip = Me.mcmTitleMenu1
         resources.ApplyResources(Me.mtiLT2, "mtiLT2")
         Me.mtiLT2.Name = "mtiLT2"
         Me.mtiLT2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -278,13 +288,13 @@ Partial Class frmMain
         Me.mtiLT3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLT3.UseSelectable = True
         '
-        'mtiLT4
+        'mtiLB0
         '
-        Me.mtiLT4.ActiveControl = Nothing
-        resources.ApplyResources(Me.mtiLT4, "mtiLT4")
-        Me.mtiLT4.Name = "mtiLT4"
-        Me.mtiLT4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.mtiLT4.UseSelectable = True
+        Me.mtiLB0.ActiveControl = Nothing
+        resources.ApplyResources(Me.mtiLB0, "mtiLB0")
+        Me.mtiLB0.Name = "mtiLB0"
+        Me.mtiLB0.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.mtiLB0.UseSelectable = True
         '
         'mtiLB1
         '
@@ -293,14 +303,6 @@ Partial Class frmMain
         Me.mtiLB1.Name = "mtiLB1"
         Me.mtiLB1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLB1.UseSelectable = True
-        '
-        'mtiLB2
-        '
-        Me.mtiLB2.ActiveControl = Nothing
-        resources.ApplyResources(Me.mtiLB2, "mtiLB2")
-        Me.mtiLB2.Name = "mtiLB2"
-        Me.mtiLB2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.mtiLB2.UseSelectable = True
         '
         'mpnLeftDoor
         '
@@ -331,6 +333,8 @@ Partial Class frmMain
         'mpnLeftContent
         '
         resources.ApplyResources(Me.mpnLeftContent, "mpnLeftContent")
+        Me.mpnLeftContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.mpnLeftContent.Controls.Add(Me.mtiTest)
         Me.mpnLeftContent.HorizontalScrollbarBarColor = True
         Me.mpnLeftContent.HorizontalScrollbarHighlightOnWheel = False
         Me.mpnLeftContent.HorizontalScrollbarSize = 10
@@ -339,65 +343,77 @@ Partial Class frmMain
         Me.mpnLeftContent.VerticalScrollbarHighlightOnWheel = False
         Me.mpnLeftContent.VerticalScrollbarSize = 10
         '
+        'mtiTest
+        '
+        Me.mtiTest.ActiveControl = Nothing
+        resources.ApplyResources(Me.mtiTest, "mtiTest")
+        Me.mtiTest.Name = "mtiTest"
+        Me.mtiTest.PaintTileCount = False
+        Me.mtiTest.UseSelectable = True
+        '
         'mpnRightMenu
         '
         Me.mpnRightMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.mpnRightMenu.Controls.Add(Me.mlnRT0)
         Me.mpnRightMenu.Controls.Add(Me.mlnRT1)
         Me.mpnRightMenu.Controls.Add(Me.mlnRT2)
         Me.mpnRightMenu.Controls.Add(Me.mlnRT3)
-        Me.mpnRightMenu.Controls.Add(Me.mlnRT4)
+        Me.mpnRightMenu.Controls.Add(Me.mtiRT0)
         Me.mpnRightMenu.Controls.Add(Me.mtiRT1)
         Me.mpnRightMenu.Controls.Add(Me.mtiRT2)
         Me.mpnRightMenu.Controls.Add(Me.mtiRT3)
-        Me.mpnRightMenu.Controls.Add(Me.mtiRT4)
-        resources.ApplyResources(Me.mpnRightMenu, "mpnRightMenu")
         Me.mpnRightMenu.HorizontalScrollbarBarColor = True
         Me.mpnRightMenu.HorizontalScrollbarHighlightOnWheel = False
         Me.mpnRightMenu.HorizontalScrollbarSize = 10
+        resources.ApplyResources(Me.mpnRightMenu, "mpnRightMenu")
         Me.mpnRightMenu.Name = "mpnRightMenu"
         Me.mpnRightMenu.VerticalScrollbarBarColor = True
         Me.mpnRightMenu.VerticalScrollbarHighlightOnWheel = False
         Me.mpnRightMenu.VerticalScrollbarSize = 10
         '
+        'mlnRT0
+        '
+        Me.mlnRT0.AllowDrop = True
+        resources.ApplyResources(Me.mlnRT0, "mlnRT0")
+        Me.mlnRT0.ImageSize = 32
+        Me.mlnRT0.Name = "mlnRT0"
+        Me.mlnRT0.NoFocusImage = CType(resources.GetObject("mlnRT0.NoFocusImage"), System.Drawing.Image)
+        Me.mlnRT0.UseSelectable = True
+        '
         'mlnRT1
         '
         Me.mlnRT1.AllowDrop = True
-        Me.mlnRT1.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
-        Me.mlnRT1.ImageSize = 32
         resources.ApplyResources(Me.mlnRT1, "mlnRT1")
+        Me.mlnRT1.ImageSize = 32
         Me.mlnRT1.Name = "mlnRT1"
-        Me.mlnRT1.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
+        Me.mlnRT1.NoFocusImage = CType(resources.GetObject("mlnRT1.NoFocusImage"), System.Drawing.Image)
         Me.mlnRT1.UseSelectable = True
         '
         'mlnRT2
         '
         Me.mlnRT2.AllowDrop = True
-        Me.mlnRT2.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
-        Me.mlnRT2.ImageSize = 32
         resources.ApplyResources(Me.mlnRT2, "mlnRT2")
+        Me.mlnRT2.ImageSize = 32
         Me.mlnRT2.Name = "mlnRT2"
-        Me.mlnRT2.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
+        Me.mlnRT2.NoFocusImage = CType(resources.GetObject("mlnRT2.NoFocusImage"), System.Drawing.Image)
         Me.mlnRT2.UseSelectable = True
         '
         'mlnRT3
         '
         Me.mlnRT3.AllowDrop = True
-        Me.mlnRT3.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
-        Me.mlnRT3.ImageSize = 32
         resources.ApplyResources(Me.mlnRT3, "mlnRT3")
+        Me.mlnRT3.ImageSize = 32
         Me.mlnRT3.Name = "mlnRT3"
-        Me.mlnRT3.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
+        Me.mlnRT3.NoFocusImage = CType(resources.GetObject("mlnRT3.NoFocusImage"), System.Drawing.Image)
         Me.mlnRT3.UseSelectable = True
         '
-        'mlnRT4
+        'mtiRT0
         '
-        Me.mlnRT4.AllowDrop = True
-        Me.mlnRT4.Image = Global.ViewLDD.My.Resources.Resources.mnuSetting_focus
-        Me.mlnRT4.ImageSize = 32
-        resources.ApplyResources(Me.mlnRT4, "mlnRT4")
-        Me.mlnRT4.Name = "mlnRT4"
-        Me.mlnRT4.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSetting_nofocus
-        Me.mlnRT4.UseSelectable = True
+        Me.mtiRT0.ActiveControl = Nothing
+        resources.ApplyResources(Me.mtiRT0, "mtiRT0")
+        Me.mtiRT0.Name = "mtiRT0"
+        Me.mtiRT0.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.mtiRT0.UseSelectable = True
         '
         'mtiRT1
         '
@@ -423,21 +439,15 @@ Partial Class frmMain
         Me.mtiRT3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiRT3.UseSelectable = True
         '
-        'mtiRT4
-        '
-        Me.mtiRT4.ActiveControl = Nothing
-        resources.ApplyResources(Me.mtiRT4, "mtiRT4")
-        Me.mtiRT4.Name = "mtiRT4"
-        Me.mtiRT4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.mtiRT4.UseSelectable = True
-        '
         'mpnRightContent
         '
         resources.ApplyResources(Me.mpnRightContent, "mpnRightContent")
+        Me.mpnRightContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.mpnRightContent.HorizontalScrollbarBarColor = True
         Me.mpnRightContent.HorizontalScrollbarHighlightOnWheel = False
         Me.mpnRightContent.HorizontalScrollbarSize = 10
         Me.mpnRightContent.Name = "mpnRightContent"
+        Me.mpnRightContent.UseStyleColors = True
         Me.mpnRightContent.VerticalScrollbarBarColor = True
         Me.mpnRightContent.VerticalScrollbarHighlightOnWheel = False
         Me.mpnRightContent.VerticalScrollbarSize = 10
@@ -455,22 +465,28 @@ Partial Class frmMain
         '
         'mpnData
         '
-        resources.ApplyResources(Me.mpnData, "mpnData")
+        Me.mpnData.Controls.Add(Me.MetroButton1)
         Me.mpnData.Controls.Add(Me.btnTest)
         Me.mpnData.Controls.Add(Me.lblLanguage)
         Me.mpnData.HorizontalScrollbarBarColor = True
         Me.mpnData.HorizontalScrollbarHighlightOnWheel = False
         Me.mpnData.HorizontalScrollbarSize = 10
+        resources.ApplyResources(Me.mpnData, "mpnData")
         Me.mpnData.Name = "mpnData"
         Me.mpnData.VerticalScrollbarBarColor = True
         Me.mpnData.VerticalScrollbarHighlightOnWheel = False
         Me.mpnData.VerticalScrollbarSize = 10
         '
+        'MetroButton1
+        '
+        resources.ApplyResources(Me.MetroButton1, "MetroButton1")
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.UseSelectable = True
+        '
         'mtlTitleMenu1
         '
         Me.mtlTitleMenu1.BackColor = System.Drawing.Color.Transparent
         Me.mtlTitleMenu1.ContextMenuStrip = Me.mcmTitleMenu1
-        Me.mtlTitleMenu1.FontSize = MetroFramework.MetroLinkSize.Medium
         Me.mtlTitleMenu1.FontWeight = MetroFramework.MetroLinkWeight.Regular
         resources.ApplyResources(Me.mtlTitleMenu1, "mtlTitleMenu1")
         Me.mtlTitleMenu1.Name = "mtlTitleMenu1"
@@ -480,7 +496,6 @@ Partial Class frmMain
         'mtlTitleMenu2
         '
         Me.mtlTitleMenu2.BackColor = System.Drawing.Color.Transparent
-        Me.mtlTitleMenu2.FontSize = MetroFramework.MetroLinkSize.Medium
         Me.mtlTitleMenu2.FontWeight = MetroFramework.MetroLinkWeight.Regular
         resources.ApplyResources(Me.mtlTitleMenu2, "mtlTitleMenu2")
         Me.mtlTitleMenu2.Name = "mtlTitleMenu2"
@@ -490,7 +505,6 @@ Partial Class frmMain
         'mtlTitleMenu3
         '
         Me.mtlTitleMenu3.BackColor = System.Drawing.Color.Transparent
-        Me.mtlTitleMenu3.FontSize = MetroFramework.MetroLinkSize.Medium
         Me.mtlTitleMenu3.FontWeight = MetroFramework.MetroLinkWeight.Regular
         resources.ApplyResources(Me.mtlTitleMenu3, "mtlTitleMenu3")
         Me.mtlTitleMenu3.Name = "mtlTitleMenu3"
@@ -500,7 +514,6 @@ Partial Class frmMain
         'mtlTitleMenu4
         '
         Me.mtlTitleMenu4.BackColor = System.Drawing.Color.Transparent
-        Me.mtlTitleMenu4.FontSize = MetroFramework.MetroLinkSize.Medium
         Me.mtlTitleMenu4.FontWeight = MetroFramework.MetroLinkWeight.Regular
         resources.ApplyResources(Me.mtlTitleMenu4, "mtlTitleMenu4")
         Me.mtlTitleMenu4.Name = "mtlTitleMenu4"
@@ -667,6 +680,7 @@ Partial Class frmMain
         CType(Me.msmMain, System.ComponentModel.ISupportInitialize).EndInit()
         Me.mpnLeftMenu.ResumeLayout(False)
         Me.mpnLeftDoor.ResumeLayout(False)
+        Me.mpnLeftContent.ResumeLayout(False)
         Me.mpnRightMenu.ResumeLayout(False)
         Me.mpnData.ResumeLayout(False)
         Me.mpnData.PerformLayout()
@@ -686,32 +700,32 @@ Partial Class frmMain
     Friend WithEvents mpnLeftDoor As MetroFramework.Controls.MetroPanel
     Friend WithEvents mpnLeftMenu As MetroFramework.Controls.MetroPanel
     Friend WithEvents btnLeftDoor As Button
-    Friend WithEvents mtiLT1 As MetroFramework.Controls.MetroTile
+    Friend WithEvents mtiLT0 As MetroFramework.Controls.MetroTile
     Friend WithEvents pnlLeftDoorR As Panel
     Friend WithEvents mnuOpen As ToolStripMenuItem
     Friend WithEvents mnuSave As ToolStripMenuItem
     Friend WithEvents pnlLeftDoorL As Panel
-    Friend WithEvents mlnLT1 As MetroFramework.Controls.MetroLink
+    Friend WithEvents mlnLT0 As MetroFramework.Controls.MetroLink
+    Friend WithEvents mtiLT1 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtiLT2 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtiLT3 As MetroFramework.Controls.MetroTile
-    Friend WithEvents mtiLT4 As MetroFramework.Controls.MetroTile
+    Friend WithEvents mtiLB0 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtiLB1 As MetroFramework.Controls.MetroTile
-    Friend WithEvents mtiLB2 As MetroFramework.Controls.MetroTile
-    Friend WithEvents mlnLT2 As MetroFramework.Controls.MetroLink
-    Friend WithEvents mlnLT4 As MetroFramework.Controls.MetroLink
+    Friend WithEvents mlnLT1 As MetroFramework.Controls.MetroLink
     Friend WithEvents mlnLT3 As MetroFramework.Controls.MetroLink
+    Friend WithEvents mlnLT2 As MetroFramework.Controls.MetroLink
+    Friend WithEvents mlnLB0 As MetroFramework.Controls.MetroLink
     Friend WithEvents mlnLB1 As MetroFramework.Controls.MetroLink
-    Friend WithEvents mlnLB2 As MetroFramework.Controls.MetroLink
     Friend WithEvents mpnLeftContent As MetroFramework.Controls.MetroPanel
     Friend WithEvents mpnRightMenu As MetroFramework.Controls.MetroPanel
+    Friend WithEvents mlnRT0 As MetroFramework.Controls.MetroLink
     Friend WithEvents mlnRT1 As MetroFramework.Controls.MetroLink
     Friend WithEvents mlnRT2 As MetroFramework.Controls.MetroLink
     Friend WithEvents mlnRT3 As MetroFramework.Controls.MetroLink
-    Friend WithEvents mlnRT4 As MetroFramework.Controls.MetroLink
+    Friend WithEvents mtiRT0 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtiRT1 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtiRT2 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtiRT3 As MetroFramework.Controls.MetroTile
-    Friend WithEvents mtiRT4 As MetroFramework.Controls.MetroTile
     Friend WithEvents mpnData As MetroFramework.Controls.MetroPanel
     Friend WithEvents mpnRightContent As MetroFramework.Controls.MetroPanel
     Friend WithEvents mpnMain As MetroFramework.Controls.MetroPanel
@@ -743,4 +757,6 @@ Partial Class frmMain
     Friend WithEvents mnuSettings As ToolStripMenuItem
     Friend WithEvents mnuTheme As ToolStripMenuItem
     Friend WithEvents mnuLanguage As ToolStripMenuItem
+    Friend WithEvents mtiTest As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
 End Class

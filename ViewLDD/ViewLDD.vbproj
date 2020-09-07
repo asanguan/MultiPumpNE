@@ -95,6 +95,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmMainViewLDD.Designer.vb">
+      <DependentUpon>frmMainViewLDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainViewLDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myFormControl.vb" />
     <Compile Include="frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
@@ -128,6 +135,9 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMainViewLDD.resx">
+      <DependentUpon>frmMainViewLDD.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -152,11 +162,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\LDDVIEW.ICO" />
-    <None Include="Resources\mnuFile.png" />
-    <None Include="Resources\mnuEdit.png" />
-    <None Include="Resources\mnuSetting.png" />
-    <None Include="Resources\mnuSetting_focus.png" />
-    <None Include="Resources\mnuSetting_nofocus.png" />
+    <None Include="Resources\menuEdit_focus.png" />
+    <None Include="Resources\menuFile_nofocus.png" />
+    <None Include="Resources\menuHelp_nofocus.png" />
+    <None Include="Resources\menuMarker_nofocus.png" />
+    <None Include="Resources\menuOthers_nofocus.png" />
+    <None Include="Resources\menuSettings_focus.png" />
+    <None Include="Resources\menuEdit_nofocus.png" />
+    <None Include="Resources\menuMarker_focus.png" />
+    <None Include="Resources\menuOthers_focus.png" />
+    <None Include="Resources\menuHelp_focus.png" />
+    <None Include="Resources\menuSettings_nofocus.png" />
     <None Include="Resources\LDDVIEWico.png" />
     <None Include="Resources\LDDVIEW.png" />
   </ItemGroup>

@@ -127,19 +127,40 @@
   <data name="LDDVIEWsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LDDVIEW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mnuEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuEdit_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuEdit_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mnuFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuEdit_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuEdit_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mnuSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuSetting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuFile_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuFile_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mnuSetting_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuSetting_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuFile_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuFile_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mnuSetting_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuSetting_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuHelp_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuHelp_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menuHelp_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuHelp_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menuMarker_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuMarker_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menuMarker_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuMarker_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menuOthers_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuOthers_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menuOthers_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuOthers_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menuSettings_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuSettings_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menuSettings_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuSettings_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

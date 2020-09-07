@@ -77,6 +77,33 @@ Namespace My
                 Me("Theme") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("40")>  _
+        Public ReadOnly Property LeftMenuWidth() As Integer
+            Get
+                Return CType(Me("LeftMenuWidth"),Integer)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("200")>  _
+        Public ReadOnly Property LeftContentWidth() As Integer
+            Get
+                Return CType(Me("LeftContentWidth"),Integer)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("15")>  _
+        Public ReadOnly Property LeftDoorWidth() As Integer
+            Get
+                Return CType(Me("LeftDoorWidth"),Integer)
+            End Get
+        End Property
     End Class
 End Namespace
 
