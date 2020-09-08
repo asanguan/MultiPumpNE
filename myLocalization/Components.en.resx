@@ -117,17 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="All_files" xml:space="preserve">
-    <value>All files</value>
-    <comment>185</comment>
-  </data>
   <data name="btnTest" xml:space="preserve">
     <value>Test</value>
     <comment>For Test</comment>
-  </data>
-  <data name="Data_file" xml:space="preserve">
-    <value>Data file</value>
-    <comment>186</comment>
   </data>
   <data name="mnuCDark" xml:space="preserve">
     <value>Dark</value>
