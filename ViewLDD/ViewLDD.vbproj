@@ -95,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmDlg.Designer.vb">
+      <DependentUpon>frmDlg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlg.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMainViewLDD.Designer.vb">
       <DependentUpon>frmMainViewLDD.vb</DependentUpon>
     </Compile>
@@ -124,6 +130,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Panel\pnlOne.Designer.vb">
+      <DependentUpon>pnlOne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\pnlOne.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\pnlTwo.Designer.vb">
+      <DependentUpon>pnlTwo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\pnlTwo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\SlidePanel.Designer.vb">
+      <DependentUpon>SlidePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\SlidePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\SlidePaneltoPanel.Designer.vb">
+      <DependentUpon>SlidePaneltoPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\SlidePaneltoPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
@@ -132,6 +162,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmDlg.resx">
+      <DependentUpon>frmDlg.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +176,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\pnlOne.resx">
+      <DependentUpon>pnlOne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\pnlTwo.resx">
+      <DependentUpon>pnlTwo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
@@ -177,5 +216,6 @@
     <None Include="Resources\LDDVIEW.png" />
   </ItemGroup>
   <ItemGroup />
+  <Import Project="..\SharedMultiPumpNE\SharedMultiPumpNE.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

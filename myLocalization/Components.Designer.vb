@@ -65,11 +65,29 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to All files.
+        '''</summary>
+        Public Shared ReadOnly Property All_files() As String
+            Get
+                Return ResourceManager.GetString("All_files", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Test.
         '''</summary>
         Public Shared ReadOnly Property btnTest() As String
             Get
                 Return ResourceManager.GetString("btnTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Data file.
+        '''</summary>
+        Public Shared ReadOnly Property Data_file() As String
+            Get
+                Return ResourceManager.GetString("Data_file", resourceCulture)
             End Get
         End Property
         

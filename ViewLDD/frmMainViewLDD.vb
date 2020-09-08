@@ -220,4 +220,29 @@ Public Class frmMainViewLDD
         mtiTest.Text = "Tile LB is active"
     End Sub
 
+    Private Sub btnTest_Click(sender As Object, e As EventArgs) Handles btnTest.Click
+        'Dim _pnl As New pnlOne(Me)
+        Dim _pnl As New pnlTwo(Me.mpnMiddle)
+        AddHandler _pnl.Closed, AddressOf pnl_Closed
+        AddHandler _pnl.Shown, AddressOf pnl_Shown
+        _pnl.Swipe(True)
+        btnTest.Enabled = False
+    End Sub
+
+    Private Sub pnl_Closed(sender As Object, e As EventArgs)
+        btnTest.Enabled = True
+    End Sub
+
+    Private Sub pnl_Shown(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub mnuOpen_Click(sender As Object, e As EventArgs) Handles mnuOpen.Click
+        Dim fn As String
+        'fn = SelLoadFileM("C:\", "*.LDD", "All files(*.*)|*.*|" & "Data file(*.LDD)|*.LDD", 2)
+        fn = SelLoadFileM("C:\", "*.LDD", myLocalization.My.Resources.Texts.All_files & "(*.*)|*.*|" & myLocalization.My.Resources.Texts.Data_file & "(*.LDD)|*.LDD", 2)
+        If fn = "" Or fn = "*.LDD" Then Exit Sub
+        'NewDataForm(fn)
+        'Call msubScreenControl()
+    End Sub
 End Class
