@@ -1,8 +1,25 @@
 ﻿Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 Imports MetroFramework
+Imports Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6
+Module mdPublicDeclare
+    Public FRM_Main As New frmMainViewLDD
+    Public FRM_Data As New frmData
+End Module
 Public Class frmMainViewLDD
     Dim LeftDoorState As DoorState
+    Dim vView, vDir, vMark As Short
+    Dim ViewName As String
+    Dim SortKey, SortOrder As Short
+    Dim fr As Short
+    Dim FilePath As String
+    Dim fData() As cfgs
+    Dim fdIdx As Short
+    Dim UpdateField As Short
+
+    Private gDisp As Integer
+    Private m_bChangeFlg As Boolean
+
     Enum DoorState
         Close
         HalfOpen
@@ -32,53 +49,11 @@ Public Class frmMainViewLDD
     End Sub
 
     Private Sub frmMainViewLDD_Load(sender As Object, e As EventArgs) Handles Me.Load
-        btnTest.Text = myLocalization.My.Resources.Components.mnuOpen
-        lblLanguage.Text = My.Settings.Language
-
-#Region "Load - TitleMenu"
-        mtlTitleMenu1.Text = myLocalization.My.Resources.Components.mnuFile
-        mnuOpen.Text = myLocalization.My.Resources.Components.mnuOpen
-        mnuSave.Text = myLocalization.My.Resources.Components.mnuSave
-        mnuClose.Text = myLocalization.My.Resources.Components.mnuClose
-        mnuExit.Text = myLocalization.My.Resources.Components.mnuExit
-
-        mtlTitleMenu2.Text = myLocalization.My.Resources.Components.mnuEdit
-        mnuChangePN.Text = myLocalization.My.Resources.Components.mnuChangePN
-        mnuChangeLN.Text = myLocalization.My.Resources.Components.mnuChangeLN
-        mnuChangeSN.Text = myLocalization.My.Resources.Components.mnuChangeSN
-        mnuDeleteCard.Text = myLocalization.My.Resources.Components.mnuDeleteCard
-
-        mtlTitleMenu3.Text = myLocalization.My.Resources.Components.mnuView
-        mnuViewTerm.Text = myLocalization.My.Resources.Components.mnuViewTerm
-        mnuViewChars.Text = myLocalization.My.Resources.Components.mnuViewChars
-        mnuViewAbout.Text = myLocalization.My.Resources.Components.mnuViewAbout
-
-        mtlTitleMenu4.Text = myLocalization.My.Resources.Components.mnuData
-        mnuSort.Text = myLocalization.My.Resources.Components.mnuSort
-        mnuMark.Text = myLocalization.My.Resources.Components.mnuMark
-        mnuGraph.Text = myLocalization.My.Resources.Components.mnuGraph
-        mnuReCalc.Text = myLocalization.My.Resources.Components.mnuReCalc
-        mnuSort.Text = myLocalization.My.Resources.Components.mnuSort
-        mnuWrite.Text = myLocalization.My.Resources.Components.mnuWrite
-        mnuWriteNum.Text = myLocalization.My.Resources.Components.mnuWriteNum
-#End Region
-
-#Region "LeftMenu"
-        'Left Menu Top
-        Call TileReset_LT()
-        'Left Menu Bottom
-        mnuSettings.Text = myLocalization.My.Resources.Components.mnuSettings
-        mnuTheme.Text = myLocalization.My.Resources.Components.mnuTheme
-        mnuLanguage.Text = myLocalization.My.Resources.Components.mnuLanguage
-        Call TileReset_LB()
-        'Left Door
-        Call LeftDoorClose()
-#End Region
-
-#Region "RightMenu"
-        Call TileReset_RT()
-#End Region
-
+        FormCaptionInit()
+        TileReset_LT()
+        TileReset_LB()
+        LeftDoorClose()
+        TileReset_RT()
     End Sub
 
 #Region "Subroutine to control each control state"
@@ -163,16 +138,42 @@ Public Class frmMainViewLDD
     End Sub
 #End Region
 
-    Private Sub mnuLanguage_Click(sender As Object, e As EventArgs) Handles mnuLanguage.Click
-        Select Case My.Settings.Language
-            Case "en"
-                My.Settings.Language = "ja"
-            Case "ja"
-                My.Settings.Language = "en"
-        End Select
-        Application.Restart()
+#Region "Side Menu Controls"
+    Private Sub mlnLT0_Click(sender As Object, e As EventArgs) Handles mlnLT0.Click
+        TileReset_LT()
+        TileReset_LB()
+        LeftDoorFullOpen()
+        mtiLT(0).Visible = True
+        mtiTest.Text = "Tile0 is active"
     End Sub
-
+    Private Sub mlnLT1_Click(sender As Object, e As EventArgs) Handles mlnLT1.Click
+        TileReset_LT()
+        TileReset_LB()
+        LeftDoorFullOpen()
+        mtiLT(1).Visible = True
+        mtiTest.Text = "Tile1 is active"
+    End Sub
+    Private Sub mlnLT2_Click(sender As Object, e As EventArgs) Handles mlnLT2.Click
+        TileReset_LT()
+        TileReset_LB()
+        LeftDoorFullOpen()
+        mtiLT(2).Visible = True
+        mtiTest.Text = "Tile2 is active"
+    End Sub
+    Private Sub mlnLT3_Click(sender As Object, e As EventArgs) Handles mlnLT3.Click
+        TileReset_LT()
+        TileReset_LB()
+        LeftDoorFullOpen()
+        mtiLT(3).Visible = True
+        mtiTest.Text = "Tile3 is active"
+    End Sub
+    Private Sub mlnLB0_Click(sender As Object, e As EventArgs) Handles mlnLB0.Click
+        TileReset_LT()
+        TileReset_LB()
+        LeftDoorFullOpen()
+        mtiLB(0).Visible = True
+        mtiTest.Text = "Tile LB is active"
+    End Sub
     Private Sub mnuTheme_Click(sender As Object, e As EventArgs) Handles mnuTheme.Click
         Select Case Me.StyleManager.Theme
             Case 2
@@ -182,44 +183,17 @@ Public Class frmMainViewLDD
         End Select
         Application.Restart()
     End Sub
-
-    Private Sub mlnLT0_Click(sender As Object, e As EventArgs) Handles mlnLT0.Click
-        Call TileReset_LT()
-        Call TileReset_LB()
-        Call LeftDoorFullOpen()
-        mtiLT(0).Visible = True
-        mtiTest.Text = "Tile0 is active"
+    Private Sub mnuLanguage_Click(sender As Object, e As EventArgs) Handles mnuLanguage.Click
+        Select Case My.Settings.Language
+            Case "en"
+                My.Settings.Language = "ja"
+            Case "ja"
+                My.Settings.Language = "en"
+        End Select
+        Application.Restart()
     End Sub
-    Private Sub mlnLT1_Click(sender As Object, e As EventArgs) Handles mlnLT1.Click
-        Call TileReset_LT()
-        Call TileReset_LB()
-        Call LeftDoorFullOpen()
-        mtiLT(1).Visible = True
-        mtiTest.Text = "Tile1 is active"
-    End Sub
-    Private Sub mlnLT2_Click(sender As Object, e As EventArgs) Handles mlnLT2.Click
-        Call TileReset_LT()
-        Call TileReset_LB()
-        Call LeftDoorFullOpen()
-        mtiLT(2).Visible = True
-        mtiTest.Text = "Tile2 is active"
-    End Sub
-    Private Sub mlnLT3_Click(sender As Object, e As EventArgs) Handles mlnLT3.Click
-        Call TileReset_LT()
-        Call TileReset_LB()
-        Call LeftDoorFullOpen()
-        mtiLT(3).Visible = True
-        mtiTest.Text = "Tile3 is active"
-    End Sub
-
-    Private Sub mlnLB0_Click(sender As Object, e As EventArgs) Handles mlnLB0.Click
-        Call TileReset_LT()
-        Call TileReset_LB()
-        Call LeftDoorFullOpen()
-        mtiLB(0).Visible = True
-        mtiTest.Text = "Tile LB is active"
-    End Sub
-
+#End Region
+#Region "Temporary"
     Private Sub btnTest_Click(sender As Object, e As EventArgs) Handles btnTest.Click
         'Dim _pnl As New pnlOne(Me)
         Dim _pnl As New pnlTwo(Me.mpnMiddle)
@@ -237,12 +211,105 @@ Public Class frmMainViewLDD
 
     End Sub
 
+
+#End Region
+    'Private Sub mnuOpen_Click(sender As Object, e As EventArgs) Handles mnuOpen.Click
+    '    Dim fn As String
+    '    'fn = SelLoadFileM("C:\", "*.LDD", "All files(*.*)|*.*|" & "Data file(*.LDD)|*.LDD", 2)
+    '    fn = SelLoadFileM(DataFolder, "*.LDD", myLocalization.My.Resources.Texts.All_files & "(*.*)|*.*|" & myLocalization.My.Resources.Texts.Data_file & "(*.LDD)|*.LDD", 2)
+    '    If fn = "" Or fn = "*.LDD" Then Exit Sub
+    '    'NewDataForm(fn)
+    '    'NewMainForm(fn)
+    '    NewDataPanel(fn)
+    'End Sub
+
     Private Sub mnuOpen_Click(sender As Object, e As EventArgs) Handles mnuOpen.Click
+        On Error GoTo ErrmnuOpen
+
         Dim fn As String
-        'fn = SelLoadFileM("C:\", "*.LDD", "All files(*.*)|*.*|" & "Data file(*.LDD)|*.LDD", 2)
-        fn = SelLoadFileM("C:\", "*.LDD", myLocalization.My.Resources.Texts.All_files & "(*.*)|*.*|" & myLocalization.My.Resources.Texts.Data_file & "(*.LDD)|*.LDD", 2)
+
+        fn = SelLoadFileM(DataFolder, "*.LDD", myLocalization.My.Resources.Texts.All_files & "(*.*)|*.*|" & myLocalization.My.Resources.Texts.Data_file & "(*.LDD)|*.LDD", 2)
         If fn = "" Or fn = "*.LDD" Then Exit Sub
-        'NewDataForm(fn)
-        'Call msubScreenControl()
+        gFilePath = fn
+        'System.Windows.Forms.Application.DoEvents()
+
+        gDisp = 0
+        ViewName = ""
+        vView = False
+        vMark = False
+        SortKey = False
+        SortOrder = False
+        fr = -1
+        FilePath = gFilePath
+        If Not ExistFile(FilePath) Then
+            FilePath = ""
+        End If
+        gFilePath = ""
+        UpdateField = False
+
+ErrmnuOpen:
+        MsgBoxSp(Nothing, Err.Number & " " & Err.Description)
+        m_bChangeFlg = False
     End Sub
+
+    Sub FormCaptionInit()
+        'TitleMenu
+        mtlTitleMenu1.Text = myLocalization.My.Resources.Components.mnuFile
+        mnuOpen.Text = myLocalization.My.Resources.Components.mnuOpen
+        mnuSave.Text = myLocalization.My.Resources.Components.mnuSave
+        mnuClose.Text = myLocalization.My.Resources.Components.mnuClose
+        mnuExit.Text = myLocalization.My.Resources.Components.mnuExit
+        mtlTitleMenu2.Text = myLocalization.My.Resources.Components.mnuEdit
+        mnuChangePN.Text = myLocalization.My.Resources.Components.mnuChangePN
+        mnuChangeLN.Text = myLocalization.My.Resources.Components.mnuChangeLN
+        mnuChangeSN.Text = myLocalization.My.Resources.Components.mnuChangeSN
+        mnuDeleteCard.Text = myLocalization.My.Resources.Components.mnuDeleteCard
+        mtlTitleMenu3.Text = myLocalization.My.Resources.Components.mnuView
+        mnuViewTerm.Text = myLocalization.My.Resources.Components.mnuViewTerm
+        mnuViewChars.Text = myLocalization.My.Resources.Components.mnuViewChars
+        mnuViewAbout.Text = myLocalization.My.Resources.Components.mnuViewAbout
+        mtlTitleMenu4.Text = myLocalization.My.Resources.Components.mnuData
+        mnuSort.Text = myLocalization.My.Resources.Components.mnuSort
+        mnuMark.Text = myLocalization.My.Resources.Components.mnuMark
+        mnuGraph.Text = myLocalization.My.Resources.Components.mnuGraph
+        mnuReCalc.Text = myLocalization.My.Resources.Components.mnuReCalc
+        mnuSort.Text = myLocalization.My.Resources.Components.mnuSort
+        mnuWrite.Text = myLocalization.My.Resources.Components.mnuWrite
+        mnuWriteNum.Text = myLocalization.My.Resources.Components.mnuWriteNum
+        'LeftMenu
+        mnuSettings.Text = myLocalization.My.Resources.Components.mnuSettings
+        mnuTheme.Text = myLocalization.My.Resources.Components.mnuTheme
+        mnuLanguage.Text = myLocalization.My.Resources.Components.mnuLanguage
+        'RightMenu
+        '---To be Added---
+    End Sub
+
+#Region "TBD New form/New Panel"
+    Sub NewDataForm(ByVal fn As String)
+        gFilePath = fn
+        System.Windows.Forms.Application.DoEvents()
+        FRM_Data.ShowDialog()
+        FRM_Data.Dispose()
+        FRM_Data = New frmData
+    End Sub
+    Sub NewMainForm(ByVal fn As String)
+        gFilePath = fn
+        System.Windows.Forms.Application.DoEvents()
+        FRM_Main.ShowDialog()
+        FRM_Main.Dispose()
+        FRM_Main = New frmMainViewLDD
+    End Sub
+
+    Private Sub NewDataPanel(ByVal fn As String)
+        'Dim _pnl As New pnlOne(Me)
+        Dim _pnl As New pnlTwo(Me.mpnMiddle)
+        gFilePath = fn
+        AddHandler _pnl.Closed, AddressOf pnl_Closed
+        AddHandler _pnl.Shown, AddressOf pnl_Shown
+        _pnl.Swipe(True)
+        btnTest.Enabled = False
+        btnNext.BringToFront()
+        btnPrev.BringToFront()
+    End Sub
+#End Region
 End Class

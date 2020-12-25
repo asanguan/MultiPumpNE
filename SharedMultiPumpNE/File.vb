@@ -33,4 +33,21 @@ ErrHandler:
         SelLoadFileM = ""
         frmDlg.Close()
     End Function
+
+    Function ExistFile(ByRef FName As String) As Short
+        Dim s As String
+        ExistFile = True
+        s = FName
+        On Error GoTo ErrExistFile
+        If s <> "" And s.IndexOf("\") < 0 Then
+            s = DataFolder & "\" & s
+        End If
+        If s <> "" And Dir(s) <> "" Then Exit Function
+        GoTo QuitExistFile
+ErrExistFile:
+        MsgBoxSp(Nothing, Err.Number & " " & Err.Description)
+        Resume QuitExistFile
+QuitExistFile:
+        ExistFile = False
+    End Function
 End Module

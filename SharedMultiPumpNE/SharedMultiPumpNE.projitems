@@ -9,7 +9,9 @@
     <Import_RootNamespace>SharedMultiPumpNE</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DEFINE.vb" />
     <Compile Include="$(MSBuildThisFileDirectory)File.vb" />
     <Compile Include="$(MSBuildThisFileDirectory)MeasSub.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)MsgSub.vb" />
   </ItemGroup>
 </Project>

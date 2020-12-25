@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMainViewLDD
     Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmMainViewLDD
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMainViewLDD))
@@ -62,6 +62,8 @@ Partial Class frmMainViewLDD
         Me.mtiLB0 = New MetroFramework.Controls.MetroTile()
         Me.mtiLB1 = New MetroFramework.Controls.MetroTile()
         Me.mpnMiddle = New MetroFramework.Controls.MetroPanel()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.btnPrev = New System.Windows.Forms.Button()
         Me.btnTest = New System.Windows.Forms.Button()
         Me.lblLanguage = New System.Windows.Forms.TextBox()
         Me.mcmTitleMenu4 = New MetroFramework.Controls.MetroContextMenu(Me.components)
@@ -158,7 +160,7 @@ Partial Class frmMainViewLDD
         '
         Me.mlnRT0.AllowDrop = True
         resources.ApplyResources(Me.mlnRT0, "mlnRT0")
-        Me.mlnRT0.ImageSize = 32
+        Me.mlnRT0.ImageSize = 28
         Me.mlnRT0.Name = "mlnRT0"
         Me.mlnRT0.NoFocusImage = CType(resources.GetObject("mlnRT0.NoFocusImage"), System.Drawing.Image)
         Me.mlnRT0.UseSelectable = True
@@ -167,7 +169,7 @@ Partial Class frmMainViewLDD
         '
         Me.mlnRT1.AllowDrop = True
         resources.ApplyResources(Me.mlnRT1, "mlnRT1")
-        Me.mlnRT1.ImageSize = 32
+        Me.mlnRT1.ImageSize = 28
         Me.mlnRT1.Name = "mlnRT1"
         Me.mlnRT1.NoFocusImage = CType(resources.GetObject("mlnRT1.NoFocusImage"), System.Drawing.Image)
         Me.mlnRT1.UseSelectable = True
@@ -176,7 +178,7 @@ Partial Class frmMainViewLDD
         '
         Me.mlnRT2.AllowDrop = True
         resources.ApplyResources(Me.mlnRT2, "mlnRT2")
-        Me.mlnRT2.ImageSize = 32
+        Me.mlnRT2.ImageSize = 28
         Me.mlnRT2.Name = "mlnRT2"
         Me.mlnRT2.NoFocusImage = CType(resources.GetObject("mlnRT2.NoFocusImage"), System.Drawing.Image)
         Me.mlnRT2.UseSelectable = True
@@ -185,7 +187,7 @@ Partial Class frmMainViewLDD
         '
         Me.mlnRT3.AllowDrop = True
         resources.ApplyResources(Me.mlnRT3, "mlnRT3")
-        Me.mlnRT3.ImageSize = 32
+        Me.mlnRT3.ImageSize = 28
         Me.mlnRT3.Name = "mlnRT3"
         Me.mlnRT3.NoFocusImage = CType(resources.GetObject("mlnRT3.NoFocusImage"), System.Drawing.Image)
         Me.mlnRT3.UseSelectable = True
@@ -195,6 +197,7 @@ Partial Class frmMainViewLDD
         Me.mtiRT0.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiRT0, "mtiRT0")
         Me.mtiRT0.Name = "mtiRT0"
+        Me.mtiRT0.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiRT0.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiRT0.UseSelectable = True
         '
@@ -203,6 +206,7 @@ Partial Class frmMainViewLDD
         Me.mtiRT1.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiRT1, "mtiRT1")
         Me.mtiRT1.Name = "mtiRT1"
+        Me.mtiRT1.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiRT1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiRT1.UseSelectable = True
         '
@@ -211,6 +215,7 @@ Partial Class frmMainViewLDD
         Me.mtiRT2.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiRT2, "mtiRT2")
         Me.mtiRT2.Name = "mtiRT2"
+        Me.mtiRT2.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiRT2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiRT2.UseSelectable = True
         '
@@ -219,6 +224,7 @@ Partial Class frmMainViewLDD
         Me.mtiRT3.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiRT3, "mtiRT3")
         Me.mtiRT3.Name = "mtiRT3"
+        Me.mtiRT3.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiRT3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiRT3.UseSelectable = True
         '
@@ -243,6 +249,7 @@ Partial Class frmMainViewLDD
         Me.mpnLeftContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.mpnLeftContent.Controls.Add(Me.mtiTest)
         resources.ApplyResources(Me.mpnLeftContent, "mpnLeftContent")
+        Me.mpnLeftContent.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.mpnLeftContent.HorizontalScrollbarBarColor = True
         Me.mpnLeftContent.HorizontalScrollbarHighlightOnWheel = False
         Me.mpnLeftContent.HorizontalScrollbarSize = 10
@@ -323,60 +330,61 @@ Partial Class frmMainViewLDD
         'mlnLT0
         '
         Me.mlnLT0.AllowDrop = True
-        Me.mlnLT0.Image = Global.ViewLDD.My.Resources.Resources.menuFile_focus
-        Me.mlnLT0.ImageSize = 32
+        Me.mlnLT0.Image = Global.ViewLDD.My.Resources.Resources.mnuFile_pink
+        Me.mlnLT0.ImageSize = 28
         resources.ApplyResources(Me.mlnLT0, "mlnLT0")
         Me.mlnLT0.Name = "mlnLT0"
-        Me.mlnLT0.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuFile_nofocus
+        Me.mlnLT0.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuFile_silver
         Me.mlnLT0.UseSelectable = True
         '
         'mlnLT1
         '
         Me.mlnLT1.AllowDrop = True
-        Me.mlnLT1.Image = Global.ViewLDD.My.Resources.Resources.menuEdit_focus
-        Me.mlnLT1.ImageSize = 32
+        Me.mlnLT1.Image = Global.ViewLDD.My.Resources.Resources.mnuEdit_pink
+        Me.mlnLT1.ImageSize = 28
         resources.ApplyResources(Me.mlnLT1, "mlnLT1")
         Me.mlnLT1.Name = "mlnLT1"
-        Me.mlnLT1.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuEdit_nofocus
+        Me.mlnLT1.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuEdit_silver
         Me.mlnLT1.UseSelectable = True
         '
         'mlnLT2
         '
         Me.mlnLT2.AllowDrop = True
-        Me.mlnLT2.Image = Global.ViewLDD.My.Resources.Resources.menuMarker_focus
-        Me.mlnLT2.ImageSize = 32
+        Me.mlnLT2.Image = Global.ViewLDD.My.Resources.Resources.mnuMarker_pink
+        Me.mlnLT2.ImageSize = 28
         resources.ApplyResources(Me.mlnLT2, "mlnLT2")
         Me.mlnLT2.Name = "mlnLT2"
-        Me.mlnLT2.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuMarker_nofocus
+        Me.mlnLT2.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuMarker_silver
         Me.mlnLT2.UseSelectable = True
         '
         'mlnLT3
         '
         Me.mlnLT3.AllowDrop = True
-        Me.mlnLT3.Image = Global.ViewLDD.My.Resources.Resources.menuOthers_focus
-        Me.mlnLT3.ImageSize = 32
+        Me.mlnLT3.Image = Global.ViewLDD.My.Resources.Resources.mnuMore_pink
+        Me.mlnLT3.ImageSize = 28
         resources.ApplyResources(Me.mlnLT3, "mlnLT3")
         Me.mlnLT3.Name = "mlnLT3"
-        Me.mlnLT3.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuOthers_nofocus
+        Me.mlnLT3.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuMore_silver
         Me.mlnLT3.UseSelectable = True
         '
         'mlnLB0
         '
         Me.mlnLB0.AllowDrop = True
         resources.ApplyResources(Me.mlnLB0, "mlnLB0")
-        Me.mlnLB0.Image = Global.ViewLDD.My.Resources.Resources.menuHelp_focus
-        Me.mlnLB0.ImageSize = 32
+        Me.mlnLB0.Image = Global.ViewLDD.My.Resources.Resources.mnuHelp_pink
+        Me.mlnLB0.ImageSize = 28
         Me.mlnLB0.Name = "mlnLB0"
-        Me.mlnLB0.NoFocusImage = Global.ViewLDD.My.Resources.Resources.menuHelp_nofocus
+        Me.mlnLB0.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuHelp_silver
         Me.mlnLB0.UseSelectable = True
         '
         'mlnLB1
         '
         Me.mlnLB1.AllowDrop = True
         resources.ApplyResources(Me.mlnLB1, "mlnLB1")
-        Me.mlnLB1.ImageSize = 32
+        Me.mlnLB1.Image = Global.ViewLDD.My.Resources.Resources.mnuSettings_pink
+        Me.mlnLB1.ImageSize = 28
         Me.mlnLB1.Name = "mlnLB1"
-        Me.mlnLB1.NoFocusImage = CType(resources.GetObject("mlnLB1.NoFocusImage"), System.Drawing.Image)
+        Me.mlnLB1.NoFocusImage = Global.ViewLDD.My.Resources.Resources.mnuSettings_silver
         Me.mlnLB1.UseSelectable = True
         '
         'mtiLT0
@@ -385,6 +393,7 @@ Partial Class frmMainViewLDD
         Me.mtiLT0.ContextMenuStrip = Me.mcmTitleMenu1
         resources.ApplyResources(Me.mtiLT0, "mtiLT0")
         Me.mtiLT0.Name = "mtiLT0"
+        Me.mtiLT0.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiLT0.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLT0.UseSelectable = True
         '
@@ -432,6 +441,7 @@ Partial Class frmMainViewLDD
         Me.mtiLT1.ContextMenuStrip = Me.mcmTitleMenu1
         resources.ApplyResources(Me.mtiLT1, "mtiLT1")
         Me.mtiLT1.Name = "mtiLT1"
+        Me.mtiLT1.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiLT1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLT1.UseSelectable = True
         '
@@ -440,6 +450,7 @@ Partial Class frmMainViewLDD
         Me.mtiLT2.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiLT2, "mtiLT2")
         Me.mtiLT2.Name = "mtiLT2"
+        Me.mtiLT2.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiLT2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLT2.UseSelectable = True
         '
@@ -448,6 +459,7 @@ Partial Class frmMainViewLDD
         Me.mtiLT3.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiLT3, "mtiLT3")
         Me.mtiLT3.Name = "mtiLT3"
+        Me.mtiLT3.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiLT3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLT3.UseSelectable = True
         '
@@ -456,6 +468,7 @@ Partial Class frmMainViewLDD
         Me.mtiLB0.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiLB0, "mtiLB0")
         Me.mtiLB0.Name = "mtiLB0"
+        Me.mtiLB0.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiLB0.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLB0.UseSelectable = True
         '
@@ -464,12 +477,15 @@ Partial Class frmMainViewLDD
         Me.mtiLB1.ActiveControl = Nothing
         resources.ApplyResources(Me.mtiLB1, "mtiLB1")
         Me.mtiLB1.Name = "mtiLB1"
+        Me.mtiLB1.Style = MetroFramework.MetroColorStyle.Pink
         Me.mtiLB1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtiLB1.UseSelectable = True
         '
         'mpnMiddle
         '
         Me.mpnMiddle.BackColor = System.Drawing.Color.Transparent
+        Me.mpnMiddle.Controls.Add(Me.btnNext)
+        Me.mpnMiddle.Controls.Add(Me.btnPrev)
         Me.mpnMiddle.Controls.Add(Me.btnTest)
         Me.mpnMiddle.Controls.Add(Me.lblLanguage)
         resources.ApplyResources(Me.mpnMiddle, "mpnMiddle")
@@ -481,6 +497,27 @@ Partial Class frmMainViewLDD
         Me.mpnMiddle.VerticalScrollbarBarColor = True
         Me.mpnMiddle.VerticalScrollbarHighlightOnWheel = False
         Me.mpnMiddle.VerticalScrollbarSize = 10
+        '
+        'btnNext
+        '
+        resources.ApplyResources(Me.btnNext, "btnNext")
+        Me.btnNext.FlatAppearance.BorderSize = 0
+        Me.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepPink
+        Me.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro
+        Me.btnNext.ForeColor = System.Drawing.Color.Pink
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'btnPrev
+        '
+        resources.ApplyResources(Me.btnPrev, "btnPrev")
+        Me.btnPrev.BackColor = System.Drawing.Color.Transparent
+        Me.btnPrev.FlatAppearance.BorderSize = 0
+        Me.btnPrev.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepPink
+        Me.btnPrev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro
+        Me.btnPrev.ForeColor = System.Drawing.Color.Pink
+        Me.btnPrev.Name = "btnPrev"
+        Me.btnPrev.UseVisualStyleBackColor = False
         '
         'btnTest
         '
@@ -685,6 +722,7 @@ Partial Class frmMainViewLDD
         Me.Controls.Add(Me.mpnRight)
         Me.Name = "frmMainViewLDD"
         Me.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow
+        Me.Style = MetroFramework.MetroColorStyle.Pink
         Me.mpnRight.ResumeLayout(False)
         Me.mpnRightMenu.ResumeLayout(False)
         Me.mpnLeft.ResumeLayout(False)
@@ -770,4 +808,6 @@ Partial Class frmMainViewLDD
     Friend WithEvents mtiTest As MetroFramework.Controls.MetroTile
     Friend WithEvents btnTest As Button
     Friend WithEvents lblLanguage As TextBox
+    Friend WithEvents btnNext As Button
+    Friend WithEvents btnPrev As Button
 End Class

@@ -63,6 +63,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <HintPath>..\DLL\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
     <Reference Include="myLocalization">
       <HintPath>..\myLocalization\bin\Debug\myLocalization.dll</HintPath>
     </Reference>
@@ -95,6 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmData.Designer.vb">
+      <DependentUpon>frmData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmData.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDlg.Designer.vb">
       <DependentUpon>frmDlg.vb</DependentUpon>
     </Compile>
@@ -154,6 +163,7 @@
     <Compile Include="Panel\SlidePaneltoPanel.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Prefs.vb" />
     <Compile Include="SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
@@ -162,6 +172,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmData.resx">
+      <DependentUpon>frmData.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDlg.resx">
       <DependentUpon>frmDlg.vb</DependentUpon>
     </EmbeddedResource>
@@ -201,11 +214,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\LDDVIEW.ICO" />
+    <None Include="Resources\mnuFile_silver.png" />
+    <None Include="Resources\mnuFile_pink.png" />
+    <None Include="Resources\mnuEdit_silver.png" />
+    <None Include="Resources\mnuEdit_pink.png" />
+    <None Include="Resources\mnuSettings_silver.png" />
+    <None Include="Resources\mnuSettings_pink.png" />
+    <None Include="Resources\mnuMarker_silver.png" />
+    <None Include="Resources\mnuMarker_pink.png" />
+    <None Include="Resources\mnuHelp_silver.png" />
+    <None Include="Resources\mnuHelp_pink.png" />
+    <None Include="Resources\mnuMore_silver.png" />
+    <None Include="Resources\mnuMore_pink.png" />
+    <None Include="Resources\mnuSettings_focus.png" />
+    <None Include="Resources\mnuSettings_nofocus.png" />
     <None Include="Resources\menuEdit_focus.png" />
     <None Include="Resources\menuFile_nofocus.png" />
     <None Include="Resources\menuHelp_nofocus.png" />
     <None Include="Resources\menuMarker_nofocus.png" />
-    <None Include="Resources\menuOthers_nofocus.png" />
     <None Include="Resources\menuSettings_focus.png" />
     <None Include="Resources\menuEdit_nofocus.png" />
     <None Include="Resources\menuMarker_focus.png" />

@@ -163,4 +163,46 @@
   <data name="menuSettings_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menuSettings_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mnuEdit_pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuEdit_pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuEdit_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuEdit_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuFile_pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuFile_pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuFile_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuFile_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuHelp_pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuHelp_pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuHelp_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuHelp_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuMarker_pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuMarker_pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuMarker_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuMarker_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuMore_pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuMore_pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuMore_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuMore_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSettings_focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuSettings_focus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSettings_nofocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuSettings_nofocus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSettings_pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuSettings_pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSettings_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuSettings_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
